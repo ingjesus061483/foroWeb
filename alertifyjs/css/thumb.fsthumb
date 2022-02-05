@@ -1,0 +1,716 @@
+ate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;44100&quot;,
+							&quot;Channels&quot;:	&quot;2&quot;,
+							&quot;Bitspersample&quot;:	&quot;16&quot;,
+							&quot;Bytespersecond&quot;:	&quot;40000&quot;,
+							&quot;Length&quot;:	&quot;50155&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}],
+				&quot;SubPicStreamCount&quot;:	&quot;0&quot;,
+				&quot;SubPicInfos&quot;:	[]
+			}]
+	}
+}"/>
+<Property key="kMedia.Info.SerializedStringSize" type="int" value="1789"/>
+<Property key="kSource.StreamCount" type="int" value="1"/>
+<Property key="kSource.Stream_0" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="15">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="0"/>
+<Property key="kAduio_CapsFlag" type="unsigned int" value="0"/>
+<Property key="kAudio_Bitrate" type="int" value="320000"/>
+<Property key="kAudio_BitsPerSample" type="int" value="16"/>
+<Property key="kAudio_BytesPerSecond" type="int" value="176400"/>
+<Property key="kAudio_Channels" type="int" value="2"/>
+<Property key="kAudio_Description" type="std::wstring" value="mp3 MPEG layer-2, layer-3"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kAudio_Duration" type="long long" value="501550000"/>
+<Property key="kAudio_FourCC" type="unsigned int" value="859918413"/>
+<Property key="kAudio_ID" type="unsigned int" value="0"/>
+<Property key="kAudio_Name" type="std::wstring" value="MPA3"/>
+<Property key="kAudio_SampleRate" type="int" value="44100"/>
+<Property key="kAudio_State" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="3"/>
+</Properties>
+</Property>
+<Property key="kStream_ProgramID" type="int" value="1"/>
+<Property key="kVideo_Disable" type="int" value="1"/>
+</Properties>
+</Property>
+<Property key="Mix2Mono.Enabled" type="int" value="0"/>
+<Property key="OBJECTTRACK.RECT.VISILBE" type="int" value="1"/>
+<Property key="OBJECTTRACK.USING.OT" type="int" value="0"/>
+<Property key="ProxySource.Enable" type="int" value="0"/>
+<Property key="ProxySource.ProxyFile.path" type="std::wstring" value=""/>
+<Property key="REFCLSID" type="GUID" value="{FC850F8E-F304-4E87-A00C-9A43291D317F}"/>
+<Property key="Render.ContentRange" type="NLERange" value="Start:0, End:1504"/>
+<Property key="Render.Framerate" type="NLERational" value="[30, 1]: 30.0000000 "/>
+<Property key="Render.MarginMode" type="int" value="1"/>
+<Property key="Render.NeedPremult" type="int" value="0"/>
+<Property key="Render.Position" type="int" value="0"/>
+<Property key="Render.RangeFrameNumber" type="NLERange" value="Start:0, End:1504"/>
+<Property key="Render.RationPosition" type="NLERational" value="[0, 1]: 0.0000000 "/>
+<Property key="SourceRender_CurrentAudioStreamIndex" type="int" value="0"/>
+<Property key="SourceRender_CurrentKeybStreamIndex" type="int" value="-1"/>
+<Property key="SourceRender_CurrentMouseStreamIndex" type="int" value="-1"/>
+<Property key="SourceRender_CurrentVideoStreamIndex" type="int" value="-1"/>
+<Property key="Source_FileType" type="int" value="2"/>
+<Property key="SpeechEnhance.Level" type="int" value="0"/>
+<Property key="Stabilization.BoarderType" type="int" value="2"/>
+<Property key="Stabilization.Enabled" type="int" value="0"/>
+<Property key="Stabilization.Level" type="int" value="10"/>
+<Property key="Timeline.SpeedMarker" type="std::wstring" value="{&quot;fr.den&quot;:1000000,&quot;fr.num&quot;:30000000,&quot;nodes&quot;:[{&quot;audio.pitch&quot;:1,&quot;freeze&quot;:0,&quot;guid&quot;:&quot;858161F7-02DF-4A7D-9DEC-0060A525D68A&quot;,&quot;inter.mode&quot;:0,&quot;len&quot;:50.16,&quot;re.begin&quot;:50.16,&quot;re.eend&quot;:0,&quot;reverse&quot;:0,&quot;rewind.host&quot;:0,&quot;rewind.index&quot;:0,&quot;rr.b&quot;:0,&quot;rr.c&quot;:50.16,&quot;rr.end&quot;:1504,&quot;rr.start&quot;:0,&quot;speed.den&quot;:1,&quot;speed.num&quot;:1,&quot;sr.end&quot;:1504,&quot;sr.start&quot;:0,&quot;time&quot;:0}],&quot;source.len&quot;:50.16,&quot;trim.guid.end&quot;:&quot;858161F7-02DF-4A7D-9DEC-0060A525D68A&quot;,&quot;trim.guid.start&quot;:&quot;858161F7-02DF-4A7D-9DEC-0060A525D68A&quot;,&quot;trim.sr.end&quot;:50.16,&quot;trim.sr.start&quot;:0}
+"/>
+<Property key="TimelineType" type="int" value="4"/>
+<Property key="Transform.Angle" type="double" value="0.000000"/>
+<Property key="Transform.CenterPoint" type="NLEPointF" value="x:0.50000000000000000000, y:0.50000000000000000000"/>
+<Property key="Transform.Enabled" type="int" value="1"/>
+<Property key="Transform.Locked" type="int" value="0"/>
+<Property key="Transform.LockedTransform" type="int" value="0"/>
+<Property key="Transform.ResizeScale" type="NLEPointF" value="x:1.00000000000000000000, y:1.00000000000000000000"/>
+<Property key="Transform.ShowTransform" type="int" value="1"/>
+<Property key="UserData" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="5">
+<Property key="Key_AncestralGuid" type="std::wstring" value="{9998020f-fa34-48df-a6a0-a58913760ea2}"/>
+<Property key="Key_TimelineGuid" type="std::wstring" value="{a6af5b34-598f-4a1a-b690-d791ce3235ac}"/>
+<Property key="clip_color_infotag" type="int" value="5"/>
+<Property key="key_timeline_resource_info" type="std::wstring" value="{&quot;download_url&quot;:&quot;D:/musica/01.baladas 60-70/WhatsApp Audio 2021-11-16 at 7.37.09 PM (online-audio-converter.com).mp3&quot;,&quot;name&quot;:&quot;WhatsApp Audio 2021-11-16 at 7.37.09 PM (online-audio-converter.com)&quot;}"/>
+<Property key="key_timeline_type" type="std::wstring" value="2"/>
+</Properties>
+</Property>
+<Property key="ViewEdit.StatusEx.EqualScale" type="int" value="0"/>
+<Property key="Volume.Balance" type="int" value="0"/>
+<Property key="Volume.Enabled" type="int" value="1"/>
+<Property key="Volume.LoudnessNormalization" type="double" value="0.000000"/>
+<Property key="Volume.LoudnessNormalizationEnable" type="int" value="0"/>
+<Property key="Volume.Mute" type="int" value="0"/>
+<Property key="Volume.Pitch" type="int" value="0"/>
+<Property key="Volume.Volume" type="double" value="0.000000"/>
+<Property key="base.Enable" type="int" value="1"/>
+<Property key="fade.aud.in.enabled" type="int" value="0"/>
+<Property key="fade.aud.in.range" type="int" value="0"/>
+<Property key="fade.aud.out.enabled" type="int" value="0"/>
+<Property key="fade.aud.out.range" type="int" value="0"/>
+<Property key="fade.aud.renderframerate" type="NLERational" value="[30, 1]: 30.0000000 "/>
+<Property key="kKeyboard_FilterType" type="int" value="4"/>
+<Property key="kKeyboard_SampleTextStatus" type="int" value="0"/>
+<Property key="kKeyboard_ShowText" type="int" value="0"/>
+<Property key="kKeyboard_TextColor" type="NLEColorF" value="r:254.00000000000000000000, g:48.00000000000000000000, b:97.00000000000000000000"/>
+<Property key="kKeyboard_TextOpacity" type="double" value="1.000000"/>
+<Property key="kKeyboard_TextPosition" type="NLEPointF" value="x:0.00000000000000000000, y:0.00000000000000000000"/>
+<Property key="kKeyboard_TextSize" type="int" value="30"/>
+<Property key="kKeyboard_TextStyle" type="std::wstring" value=""/>
+<Property key="kKeyboard_TextXmlPath" type="std::wstring" value=""/>
+<Property key="kMouse_AudioEnable" type="int" value="0"/>
+<Property key="kMouse_AudioVolume" type="int" value="0"/>
+<Property key="kMouse_HightlightColor" type="NLEColorF" value="r:0.00000000000000000000, g:255.00000000000000000000, b:255.00000000000000000000"/>
+<Property key="kMouse_HightlightOn" type="int" value="0"/>
+<Property key="kMouse_HightlightOpacity" type="double" value="0.700000"/>
+<Property key="kMouse_HightlightRadius" type="double" value="0.100000"/>
+<Property key="kMouse_HightlightSoftness" type="double" value="0.100000"/>
+<Property key="kMouse_MagnifyColor" type="NLEColorF" value="r:0.00000000000000000000, g:255.00000000000000000000, b:255.00000000000000000000"/>
+<Property key="kMouse_MagnifyOn" type="int" value="0"/>
+<Property key="kMouse_MagnifyRadius" type="double" value="0.100000"/>
+<Property key="kMouse_MagnifyThickness" type="double" value="0.010000"/>
+<Property key="kMouse_MagnifyZoomRate" type="double" value="2.000000"/>
+<Property key="kMouse_Opacity" type="double" value="0.700000"/>
+<Property key="kMouse_RingsColor" type="NLEColorF" value="r:0.00000000000000000000, g:255.00000000000000000000, b:255.00000000000000000000"/>
+<Property key="kMouse_RingsOn" type="int" value="0"/>
+<Property key="kMouse_RingsOpacity" type="double" value="0.700000"/>
+<Property key="kMouse_RingsRadius" type="double" value="1.000000"/>
+<Property key="kMouse_Scale" type="double" value="1.000000"/>
+<Property key="kMouse_SoundFilePath" type="std::wstring" value=""/>
+<Property key="kMouse_SpotlightColor" type="NLEColorF" value="r:0.00000000000000000000, g:255.00000000000000000000, b:255.00000000000000000000"/>
+<Property key="kMouse_SpotlightOn" type="int" value="0"/>
+<Property key="kMouse_SpotlightOpacity" type="double" value="0.700000"/>
+<Property key="kMouse_SpotlightRadius" type="double" value="0.100000"/>
+<Property key="time.position.end" type="NLERational" value="[1254, 25]: 50.1600000 "/>
+<Property key="time.position.start" type="NLERational" value="[0, 1]: 0.0000000 "/>
+<Property key="time.trim.start" type="NLERational" value="[0, 1]: 0.0000000 "/>
+<Property key="timeline.guid" type="GUID" value="{6714A493-6D8B-421D-AB9F-4A073BAE5016}"/>
+<Property key="z.Alias" type="std::wstring" value=""/>
+</Properties>
+</TimeLine>
+<TimeLine>
+<Properties Count="136">
+<Property key="Absolute.FilePath" type="std::wstring" value="D:/descargas/WhatsApp Video 2021-11-16 at 9.35.49 PM.mp4"/>
+<Property key="Animation.InRatio" type="double" value="0.000000"/>
+<Property key="Animation.OutRatio" type="double" value="0.000000"/>
+<Property key="Animation.StringParam" type="std::wstring" value=""/>
+<Property key="Animation.Type" type="int" value="0"/>
+<Property key="Animation.UseOffsetPos" type="int" value="0"/>
+<Property key="AudioDucking.Distance" type="int" value="1"/>
+<Property key="AudioDucking.Enabled" type="int" value="0"/>
+<Property key="AudioDucking.Level" type="double" value="0.500000"/>
+<Property key="Composition.Enabled" type="int" value="1"/>
+<Property key="Composition.Mode" type="int" value="0"/>
+<Property key="Composition.Opacity" type="int" value="255"/>
+<Property key="Crop.Enabled" type="int" value="0"/>
+<Property key="Crop.Region" type="NLERectF" value="left:0.00000000000000000000, top:0.00000000000000000000, width:1.00000000000000000000, height:1.00000000000000000000"/>
+<Property key="Denoise.Enabled" type="int" value="0"/>
+<Property key="Denoise.Level" type="int" value="0"/>
+<Property key="Effect.Count" type="int" value="0"/>
+<Property key="Effect.EchoDelay" type="int" value="350"/>
+<Property key="Effect.EchoGain" type="double" value="0.500000"/>
+<Property key="Effect.EnableEcho" type="int" value="0"/>
+<Property key="Effect.EnablePhone" type="int" value="0"/>
+<Property key="Effect.ReverbEnable" type="int" value="0"/>
+<Property key="Effect.ReverbLevel" type="int" value="5"/>
+<Property key="Effect.ReverbType" type="int" value="1"/>
+<Property key="EffectBasinProp" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="84">
+<Property key="ChromaKey.AlphaChannel" type="int" value="0"/>
+<Property key="ChromaKey.BoundaryChange" type="double" value="-2.000000"/>
+<Property key="ChromaKey.Color" type="int" value="65280"/>
+<Property key="ChromaKey.Enabled" type="int" value="0"/>
+<Property key="ChromaKey.Level" type="double" value="2.000000"/>
+<Property key="ChromaKey.kContrast" type="double" value="50.000000"/>
+<Property key="ChromaKey.kOffset" type="double" value="0.000000"/>
+<Property key="ColorAdjust.AutoColor.Enabled" type="int" value="1"/>
+<Property key="ColorAdjust.AutoColor.InterMaxValue" type="int" value="0"/>
+<Property key="ColorAdjust.AutoColor.InterMinValue" type="int" value="0"/>
+<Property key="ColorAdjust.AutoColor.InterThresholdValue" type="double" value="-1.000000"/>
+<Property key="ColorAdjust.AutoColor.Threshold" type="double" value="0.000000"/>
+<Property key="ColorAdjust.AutoColor.Value" type="double" value="0.000000"/>
+<Property key="ColorAdjust.AutoEnhance.Amount" type="double" value="50.000000"/>
+<Property key="ColorAdjust.AutoEnhance.Enabled" type="int" value="0"/>
+<Property key="ColorAdjust.Color.Brightness" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Color.Contrast" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Color.Enabled" type="int" value="1"/>
+<Property key="ColorAdjust.Color.Exposure" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Color.Saturation" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Color.Vibrance" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Enabled" type="int" value="1"/>
+<Property key="ColorAdjust.HSL.Hue.0" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Hue.1" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Hue.2" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Hue.3" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Hue.4" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Hue.5" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Hue.6" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Hue.7" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Luminance.0" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Luminance.1" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Luminance.2" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Luminance.3" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Luminance.4" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Luminance.5" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Luminance.6" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Luminance.7" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Saturation.0" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Saturation.1" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Saturation.2" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Saturation.3" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Saturation.4" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Saturation.5" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Saturation.6" type="double" value="0.000000"/>
+<Property key="ColorAdjust.HSL.Saturation.7" type="double" value="0.000000"/>
+<Property key="ColorAdjust.LUT.Enabled" type="int" value="1"/>
+<Property key="ColorAdjust.Light.Blacks" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Light.Enabled" type="int" value="1"/>
+<Property key="ColorAdjust.Light.Highlights" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Light.Shadow" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Light.White" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Vignette.Amount" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Vignette.Enabled" type="int" value="1"/>
+<Property key="ColorAdjust.Vignette.Exposure" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Vignette.Feature" type="double" value="50.000000"/>
+<Property key="ColorAdjust.Vignette.Highlights" type="double" value="50.000000"/>
+<Property key="ColorAdjust.Vignette.Roundness" type="double" value="0.000000"/>
+<Property key="ColorAdjust.Vignette.Size" type="double" value="100.000000"/>
+<Property key="ColorAdjust.WhiteBalance.BGain" type="double" value="1.000000"/>
+<Property key="ColorAdjust.WhiteBalance.Enabled" type="int" value="1"/>
+<Property key="ColorAdjust.WhiteBalance.GGain" type="double" value="1.000000"/>
+<Property key="ColorAdjust.WhiteBalance.RGain" type="double" value="1.000000"/>
+<Property key="ColorAdjust.WhiteBalance.Temperature" type="double" value="0.000000"/>
+<Property key="ColorAdjust.WhiteBalance.Tint" type="double" value="0.000000"/>
+<Property key="EffectCover.Enable" type="int" value="1"/>
+<Property key="FlipUp.Enable" type="int" value="0"/>
+<Property key="MatchColor.Enabled" type="int" value="0"/>
+<Property key="MatchColor.mean_b" type="double" value="0.000000"/>
+<Property key="MatchColor.mean_g" type="double" value="0.000000"/>
+<Property key="MatchColor.mean_r" type="double" value="0.000000"/>
+<Property key="MatchColor.stdd_b" type="double" value="0.000000"/>
+<Property key="MatchColor.stdd_g" type="double" value="0.000000"/>
+<Property key="MatchColor.stdd_r" type="double" value="0.000000"/>
+<Property key="MatchColor.strength" type="int" value="100"/>
+<Property key="Mirror.Enable" type="int" value="0"/>
+<Property key="Render.FishEyeEnable" type="int" value="0"/>
+<Property key="Render.FishEyeLevel" type="int" value="0"/>
+<Property key="Shadow.Blur" type="int" value="20"/>
+<Property key="Shadow.Color" type="int" value="0"/>
+<Property key="Shadow.Direction" type="int" value="7"/>
+<Property key="Shadow.Distance" type="int" value="10"/>
+<Property key="Shadow.Enabled" type="int" value="0"/>
+<Property key="Shadow.Transparency" type="int" value="80"/>
+</Properties>
+</Property>
+<Property key="EffectCoverProp" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="2">
+<Property key="EffectCover.Enable" type="int" value="1"/>
+<Property key="z.FilterCount" type="int" value="0"/>
+</Properties>
+</Property>
+<Property key="EffectOverlayProp" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="4">
+<Property key="EffectCover.Enable" type="int" value="1"/>
+<Property key="ObjectTracking.Enabled" type="int" value="0"/>
+<Property key="ObjectTracking.RectVisible" type="int" value="1"/>
+<Property key="ObjectTracking.Tracking" type="int" value="0"/>
+</Properties>
+</Property>
+<Property key="Equalizer.Band1" type="double" value="0.000000"/>
+<Property key="Equalizer.Band2" type="double" value="0.000000"/>
+<Property key="Equalizer.Band3" type="double" value="0.000000"/>
+<Property key="Equalizer.Band4" type="double" value="0.000000"/>
+<Property key="Equalizer.Band5" type="double" value="0.000000"/>
+<Property key="Equalizer.Band6" type="double" value="0.000000"/>
+<Property key="Equalizer.Band7" type="double" value="0.000000"/>
+<Property key="Equalizer.Band8" type="double" value="0.000000"/>
+<Property key="Equalizer.Enabled" type="int" value="0"/>
+<Property key="Equalizer.HS" type="double" value="0.000000"/>
+<Property key="Equalizer.Name" type="std::wstring" value="Default"/>
+<Property key="Equalizer.kLS" type="double" value="0.000000"/>
+<Property key="KeyFrameAngle" type="int" value="1"/>
+<Property key="KeyFrameAngleSegment_0" type="std::wstring" value="{&quot;MaxValue&quot;:100,&quot;MinValue&quot;:-100,&quot;ParamType&quot;:0,&quot;nodes&quot;:null}
+"/>
+<Property key="KeyFrameOpacity" type="int" value="1"/>
+<Property key="KeyFrameOpacitySegment_0" type="std::wstring" value="{&quot;MaxValue&quot;:100,&quot;MinValue&quot;:-100,&quot;ParamType&quot;:0,&quot;nodes&quot;:null}
+"/>
+<Property key="KeyFramePositionX" type="int" value="1"/>
+<Property key="KeyFramePositionXSegment_0" type="std::wstring" value="{&quot;MaxValue&quot;:100,&quot;MinValue&quot;:-100,&quot;ParamType&quot;:0,&quot;nodes&quot;:null}
+"/>
+<Property key="KeyFramePositionY" type="int" value="1"/>
+<Property key="KeyFramePositionYSegment_0" type="std::wstring" value="{&quot;MaxValue&quot;:100,&quot;MinValue&quot;:-100,&quot;ParamType&quot;:0,&quot;nodes&quot;:null}
+"/>
+<Property key="KeyFrameScaleX" type="int" value="1"/>
+<Property key="KeyFrameScaleXSegment_0" type="std::wstring" value="{&quot;MaxValue&quot;:100,&quot;MinValue&quot;:-100,&quot;ParamType&quot;:0,&quot;nodes&quot;:null}
+"/>
+<Property key="KeyFrameScaleY" type="int" value="1"/>
+<Property key="KeyFrameScaleYSegment_0" type="std::wstring" value="{&quot;MaxValue&quot;:100,&quot;MinValue&quot;:-100,&quot;ParamType&quot;:0,&quot;nodes&quot;:null}
+"/>
+<Property key="Level" type="int" value="0"/>
+<Property key="MediaInfo" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="12">
+<Property key="Absolute.FilePath" type="std::wstring" value="D:/descargas/WhatsApp Video 2021-11-16 at 9.35.49 PM.mp4"/>
+<Property key="Source_FileType" type="int" value="1"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kCodec_FourCC" type="unsigned int" value="842297453"/>
+<Property key="kMedia.Info.MediaLength" type="double" value="52.311355"/>
+<Property key="kMedia.Info.SerializedString" type="std::wstring" value="{
+	&quot;MediaInfo&quot;:	{
+		&quot;FileCreateData&quot;:	&quot;2021:11:17:2:39:0,2021:11:17:2:39:0\n&quot;,
+		&quot;FOURCC&quot;:	&quot;842297453&quot;,
+		&quot;FileName&quot;:	&quot;&quot;,
+		&quot;Description&quot;:	&quot;&quot;,
+		&quot;MediaLength&quot;:	&quot;52356&quot;,
+		&quot;Bitrate&quot;:	&quot;1549646&quot;,
+		&quot;AVScanType&quot;:	&quot;2&quot;,
+		&quot;ProgramCount&quot;:	&quot;1&quot;,
+		&quot;ProgramInfos&quot;:	[{
+				&quot;Number&quot;:	&quot;1&quot;,
+				&quot;ID&quot;:	&quot;1&quot;,
+				&quot;MediaLength&quot;:	&quot;52356&quot;,
+				&quot;Bitrate&quot;:	&quot;1549646&quot;,
+				&quot;TimeStampReferenceStreamID&quot;:	&quot;0&quot;,
+				&quot;VideoStreamCount&quot;:	&quot;1&quot;,
+				&quot;VideoStreamInfos&quot;:	[{
+						&quot;StreamType&quot;:	&quot;2&quot;,
+						&quot;StreamID&quot;:	&quot;0&quot;,
+						&quot;FourCC&quot;:	&quot;875967048&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;H264&quot;,
+						&quot;Description&quot;:	&quot;Advanced Video Codec&quot;,
+						&quot;StreamLength&quot;:	&quot;52311&quot;,
+						&quot;Bitrate&quot;:	&quot;1357646&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;352&quot;,
+							&quot;Height&quot;:	&quot;640&quot;,
+							&quot;FrameRate&quot;:	&quot;29878&quot;,
+							&quot;TotalFrame&quot;:	&quot;1563&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;842094169&quot;,
+							&quot;BitsDepth&quot;:	&quot;24&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;90&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;640&quot;,
+								&quot;Height&quot;:	&quot;352&quot;,
+								&quot;FrameRate&quot;:	&quot;29878&quot;,
+								&quot;TotalFrame&quot;:	&quot;1563&quot;,
+								&quot;xratio&quot;:	&quot;16000&quot;,
+								&quot;yratio&quot;:	&quot;9000&quot;,
+								&quot;Compression&quot;:	&quot;842094169&quot;,
+								&quot;BitsDepth&quot;:	&quot;24&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;0&quot;,
+							&quot;Channels&quot;:	&quot;0&quot;,
+							&quot;Bitspersample&quot;:	&quot;0&quot;,
+							&quot;Bytespersecond&quot;:	&quot;0&quot;,
+							&quot;Length&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}],
+				&quot;AudioStreamCount&quot;:	&quot;1&quot;,
+				&quot;AudioStreamInfos&quot;:	[{
+						&quot;StreamType&quot;:	&quot;3&quot;,
+						&quot;StreamID&quot;:	&quot;1&quot;,
+						&quot;FourCC&quot;:	&quot;541278529&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;AAC &quot;,
+						&quot;Description&quot;:	&quot;Advanced Audio Codec&quot;,
+						&quot;StreamLength&quot;:	&quot;52356&quot;,
+						&quot;Bitrate&quot;:	&quot;192000&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;48000&quot;,
+							&quot;Channels&quot;:	&quot;2&quot;,
+							&quot;Bitspersample&quot;:	&quot;16&quot;,
+							&quot;Bytespersecond&quot;:	&quot;24004&quot;,
+							&quot;Length&quot;:	&quot;52356&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}],
+				&quot;SubPicStreamCount&quot;:	&quot;0&quot;,
+				&quot;SubPicInfos&quot;:	[]
+			}]
+	}
+}"/>
+<Property key="kMedia.Info.SerializedStringSize" type="int" value="3051"/>
+<Property key="kSource.StreamCount" type="int" value="2"/>
+<Property key="kSource.Stream_0" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="16">
+<Property key="kStream_Type" type="int" value="2"/>
+<Property key="kVideo_Bitrate" type="int" value="1357646"/>
+<Property key="kVideo_BitsDepth" type="int" value="24"/>
+<Property key="kVideo_CapsFlag" type="unsigned int" value="0"/>
+<Property key="kVideo_Compression" type="unsigned int" value="842094169"/>
+<Property key="kVideo_Description" type="std::wstring" value="Advanced Video Codec"/>
+<Property key="kVideo_Disable" type="int" value="0"/>
+<Property key="kVideo_Duration" type="long long" value="523113554"/>
+<Property key="kVideo_FourCC" type="unsigned int" value="875967048"/>
+<Property key="kVideo_FrameRate" type="double" value="29.878790"/>
+<Property key="kVideo_Height" type="int" value="640"/>
+<Property key="kVideo_ID" type="unsigned int" value="0"/>
+<Property key="kVideo_Name" type="std::wstring" value="H264"/>
+<Property key="kVideo_State" type="int" value="0"/>
+<Property key="kVideo_TotalFrames" type="int" value="1563"/>
+<Property key="kVideo_Width" type="int" value="352"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_1" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="15">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="0"/>
+<Property key="kAduio_CapsFlag" type="unsigned int" value="0"/>
+<Property key="kAudio_Bitrate" type="int" value="192000"/>
+<Property key="kAudio_BitsPerSample" type="int" value="16"/>
+<Property key="kAudio_BytesPerSecond" type="int" value="192000"/>
+<Property key="kAudio_Channels" type="int" value="2"/>
+<Property key="kAudio_Description" type="std::wstring" value="Advanced Audio Codec"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kAudio_Duration" type="long long" value="523566041"/>
+<Property key="kAudio_FourCC" type="unsigned int" value="541278529"/>
+<Property key="kAudio_ID" type="unsigned int" value="1"/>
+<Property key="kAudio_Name" type="std::wstring" value="AAC "/>
+<Property key="kAudio_SampleRate" type="int" value="48000"/>
+<Property key="kAudio_State" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="3"/>
+</Properties>
+</Property>
+<Property key="kStream_ProgramID" type="int" value="1"/>
+<Property key="kVideo_Disable" type="int" value="0"/>
+</Properties>
+</Property>
+<Property key="Mix2Mono.Enabled" type="int" value="0"/>
+<Property key="OBJECTTRACK.RECT.VISILBE" type="int" value="1"/>
+<Property key="OBJECTTRACK.USING.OT" type="int" value="0"/>
+<Property key="ProxySource.Enable" type="int" value="0"/>
+<Property key="ProxySource.ProxyFile.path" type="std::wstring" value=""/>
+<Property key="REFCLSID" type="GUID" value="{FC850F8E-F304-4E87-A00C-9A43291D317F}"/>
+<Property key="Render.ContentRange" type="NLERange" value="Start:0, End:1568"/>
+<Property key="Render.Framerate" type="NLERational" value="[30, 1]: 30.0000000 "/>
+<Property key="Render.MarginMode" type="int" value="1"/>
+<Property key="Render.NeedPremult" type="int" value="0"/>
+<Property key="Render.Position" type="int" value="0"/>
+<Property key="Render.RangeFrameNumber" type="NLERange" value="Start:0, End:1504"/>
+<Property key="Render.RationPosition" type="NLERational" value="[0, 1]: 0.0000000 "/>
+<Property key="SourceRender_CurrentAudioStreamIndex" type="int" value="1"/>
+<Property key="SourceRender_CurrentKeybStreamIndex" type="int" value="-1"/>
+<Property key="SourceRender_CurrentMouseStreamIndex" type="int" value="-1"/>
+<Property key="SourceRender_CurrentVideoStreamIndex" type="int" value="0"/>
+<Property key="Source_FileType" type="int" value="1"/>
+<Property key="SpeechEnhance.Level" type="int" value="0"/>
+<Property key="Stabilization.BoarderType" type="int" value="2"/>
+<Property key="Stabilization.Enabled" type="int" value="0"/>
+<Property key="Stabilization.Level" type="int" value="10"/>
+<Property key="Timeline.SpeedMarker" type="std::wstring" value="{&quot;fr.den&quot;:1000000,&quot;fr.num&quot;:30000000,&quot;nodes&quot;:[{&quot;audio.pitch&quot;:1,&quot;freeze&quot;:0,&quot;guid&quot;:&quot;82A94E50-875C-4109-A8FD-A7ADBA2D58CF&quot;,&quot;inter.mode&quot;:0,&quot;len&quot;:52.31135531258127,&quot;re.begin&quot;:52.31135531258127,&quot;re.eend&quot;:0,&quot;reverse&quot;:0,&quot;rewind.host&quot;:0,&quot;rewind.index&quot;:0,&quot;rr.b&quot;:0,&quot;rr.c&quot;:52.31135531258127,&quot;rr.end&quot;:1568,&quot;rr.start&quot;:0,&quot;speed.den&quot;:1,&quot;speed.num&quot;:1,&quot;sr.end&quot;:1568,&quot;sr.start&quot;:0,&quot;time&quot;:0}],&quot;source.len&quot;:52.31135531258127,&quot;trim.guid.end&quot;:&quot;82A94E50-875C-4109-A8FD-A7ADBA2D58CF&quot;,&quot;trim.guid.start&quot;:&quot;82A94E50-875C-4109-A8FD-A7ADBA2D58CF&quot;,&quot;trim.sr.end&quot;:50.17755879250147,&quot;trim.sr.start&quot;:0}
+"/>
+<Property key="TimelineType" type="int" value="4"/>
+<Property key="Transform.Angle" type="double" value="0.000000"/>
+<Property key="Transform.CenterPoint" type="NLEPointF" value="x:0.50000000000000000000, y:0.50000000000000000000"/>
+<Property key="Transform.Enabled" type="int" value="1"/>
+<Property key="Transform.Locked" type="int" value="0"/>
+<Property key="Transform.LockedTransform" type="int" value="0"/>
+<Property key="Transform.ResizeScale" type="NLEPointF" value="x:1.00000000000000000000, y:1.00000000000000000000"/>
+<Property key="Transform.ShowTransform" type="int" value="1"/>
+<Property key="UserData" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000000000000000">
+<Properties Count="5">
+<Property key="Key_AncestralGuid" type="std::wstring" value="{1dfad926-bef0-462d-818f-da229ad1498b}"/>
+<Property key="Key_TimelineGuid" type="std::wstring" value="{5c4dd2b1-6f96-4119-ba74-708f3aa40855}"/>
+<Property key="clip_color_infotag" type="int" value="6"/>
+<Property key="key_timeline_resource_info" type="std::wstring" value="{&quot;download_url&quot;:&quot;D:/descargas/WhatsApp Video 2021-11-16 at 9.35.49 PM.mp4&quot;,&quot;name&quot;:&quot;WhatsApp Video 2021-11-16 at 9.35.49 PM&quot;}"/>
+<Property key="key_timeline_type" type="std::wstring" value="3"/>
+</Properties>
+</Property>
+<Property key="ViewEdit.StatusEx.EqualScale" type="int" value="0"/>
+<Property key="Volume.Balance" type="int" value="0"/>
+<Property key="Volume.Enabled" type="int" value="1"/>
+<Property key="Volume.LoudnessNormalization" type="double" value="0.000000"/>
+<Property key="Volume.LoudnessNormalizationEnable" type="int" value="0"/>
+<Property key="Volume.Mute" type="int" value="0"/>
+<Property key="Volume.Pitch" type="int" value="0"/>
+<Property key="Volume.Volume" type="double" value="0.000000"/>
+<Property key="base.Enable" type="int" value="1"/>
+<Property key="fade.aud.in.enabled" type="int" value="0"/>
+<Property key="fade.aud.in.range" type="int" value="0"/>
+<Property key="fade.aud.out.enabled" type="int" value="0"/>
+<Property key="fade.aud.out.range" type="int" value="0"/>
+<Property key="fade.aud.renderframerate" type="NLERational" value="[30, 1]: 30.0000000 "/>
+<Property key="kKeyboard_FilterType" type="int" value="4"/>
+<Property key="kKeyboard_SampleTextStatus" type="int" value="0"/>
+<Property key="kKeyboard_ShowText" type="int" value="0"/>
+<Property key="kKeyboard_TextColor" type="NLEColorF" value="r:254.00000000000000000000, g:48.00000000000000000000, b:97.00000000000000000000"/>
+<Property key="kKeyboard_TextOpacity" type="double" value="1.000000"/>
+<Property key="kKeyboard_TextPosition" type="NLEPointF" value="x:0.00000000000000000000, y:0.00000000000000000000"/>
+<Property key="kKeyboard_TextSize" type="int" value="30"/>
+<Property key="kKeyboard_TextStyle" type="std::wstring" value=""/>
+<Property key="kKeyboard_TextXmlPath" type="std::wstring" value=""/>
+<Property key="kMouse_AudioEnable" type="int" value="0"/>
+<Property key="kMouse_AudioVolume" type="int" value="0"/>
+<Property key="kMouse_HightlightColor" type="NLEColorF" value="r:0.00000000000000000000, g:255.00000000000000000000, b:255.00000000000000000000"/>
+<Property key="kMouse_HightlightOn" type="int" value="0"/>
+<Property key="kMouse_HightlightOpacity" type="double" value="0.700000"/>
+<Property key="kMouse_HightlightRadius" type="double" value="0.100000"/>
+<Property key="kMouse_HightlightSoftness" type="double" value="0.100000"/>
+<Property key="kMouse_MagnifyColor" type="NLEColorF" value="r:0.00000000000000000000, g:255.00000000000000000000, b:255.00000000000000000000"/>
+<Property key="kMouse_MagnifyOn" type="int" value="0"/>
+<Property key="kMouse_MagnifyRadius" type="double" value="0.100000"/>
+<Property key="kMouse_MagnifyThickness" type="double" value="0.010000"/>
+<Property key="kMouse_MagnifyZoomRate" type="double" value="2.000000"/>
+<Property key="kMouse_Opacity" type="double" value="0.700000"/>
+<Property key="kMouse_RingsColor" type="NLEColorF" value="r:0.00000000000000000000, g:255.00000000000000000000, b:255.00000000000000000000"/>
+<Property key="kMouse_RingsOn" type="int" value="0"/>
+<Property key="kMouse_RingsOpacity" type="double" value="0.700000"/>
+<Property key="kMouse_RingsRadius" type="double" value="1.000000"/>
+<Property key="kMouse_Scale" type="double" value="1.000000"/>
+<Property key="kMouse_SoundFilePath" type="std::wstring" value=""/>
+<Property key="kMouse_SpotlightColor" type="NLEColorF" value="r:0.00000000000000000000, g:255.00000000000000000000, b:255.00000000000000000000"/>
+<Property key="kMouse_SpotlightOn" type="int" value="0"/>
+<Property key="kMouse_SpotlightOpacity" type="double" value="0.700000"/>
+<Property key="kMouse_SpotlightRadius" type="double" value="0.100000"/>
+<Property key="time.position.end" type="NLERational" value="[301, 6]: 50.1666667 "/>
+<Property key="time.position.start" type="NLERational" value="[0, 1]: 0.0000000 "/>
+<Property key="time.trim.start" type="NLERational" value="[0, 1]: 0.0000000 "/>
+<Property key="timeline.guid" type="GUID" value="{9ACD1EEE-73F1-4826-A772-6F20497DD2DF}"/>
+<Property key="z.Alias" type="std::wstring" value=""/>
+</Properties>
+</TimeLine>
+</TimeLine>
+PK
+     o¯pS%u’O  O  "   WSVEFolder/Project/track_info.json{
+    "audio_tracks": [
+        {
+            "key_audio_azimuth": 0,
+            "key_audio_balance": 0,
+            "key_audio_elevation": 0,
+            "key_audio_use_surround": false,
+            "key_audio_volume": 0,
+            "key_track_height": 70,
+            "key_track_level": 1000,
+            "key_track_locked": false,
+            "key_track_type": 2,
+            "key_track_visibled": true
+        }
+    ],
+    "video_tracks": [
+        {
+            "key_audio_azimuth": 0,
+            "key_audio_balance": 0,
+            "key_audio_elevation": 0,
+            "key_audio_use_surround": false,
+            "key_audio_volume": 0,
+            "key_track_height": 106,
+            "key_track_level": 0,
+            "key_track_locked": false,
+            "key_track_type": 1,
+            "key_track_visibled": true
+        }
+    ]
+}
+PK
+     o¯pSÁ©         WSVEFolder/project_info.json{
+    "document_animation_type": 0,
+    "document_create_date": "2021-11-16 21:54:58.000",
+    "document_create_version": "10.5.2.4",
+    "document_default_animation": "",
+    "document_duration": 1505,
+    "document_framerate": 30,
+    "document_modify_date": "2021-11-16 21:59:30.000",
+    "document_name": "VIDEO DE BRIANNY",
+    "document_new_version": "10.5.2.4",
+    "document_project_archive": false,
+    "document_project_guid": "b0dd358d-ee11-42f0-9e8f-41f9d8171b38",
+    "document_size": {
+        "height": 640,
+        "width": 352
+    },
+    "document_type_name": "wfp",
+    "document_used_id_name": [
+    ],
+    "document_used_pack_name": [
+    ],
+    "doucment_play_quality": 1,
+    "doucment_play_safe_zone": false,
+    "doucment_play_zoom_level": 0
+}
+PK
+     rR÷‰ºá[  [  F   WSVEFolder/Medias/{9998020f-fa34-48df-a6a0-a58913760ea2}/thumb.fsthumb‰PNG
+
+   IHDR      Q   =ò/©   sRGB ®Îé  IDATxí\ktTÕşæ•L&óÌƒ<HÈKb!@ ŠEå!ÔZA­€Ğ*í/—ıÑşèÏş©?u¹\e-[tµh­JEâ|,—PBB!	y¿ç‘×Lf¦ûœqb&çÅ@æä\V˜¹÷œ³ï½ßşæœ½÷Ùç(R3s½‡D B”¶“Í$I I„¨Š
+>ÙXHr *$¢‚O6–’ˆ
+I ¨à“%$¢B@(*ødcI É¨Š
+>ÙXHr *$¢‚O6–’ˆ
+I ¨à“%$¢B@(*ødcI É¨PGÕZÆª„$å-€6'Úìl$åÌ‡Æh„2Q‹á–4¼¾^·J†ÒR(JØ®]…ÇéÈ_cNH—¿ )««`\¾ŒD¾CöÏû}¦¸nAÔ&#Üv
+_|ºÜ\^æuÂV}—.ÁQw^'r-ÄqË9I Sùbdlİ„ÄÌLŸêÆ—(àê·b¸­Îî^xN8nÁÕ×se%õL9 ÕeSá,+`Y¾£½½è8~ÖËßÆ1"{ô9E Å„ìí?‡aÉbNF64ÙşWşo.a¸¹cÁi‘Ô¦§ñ6n¶š@ÊŠJ’³”z®D$¦¦!o÷8~²-o¿	gß´2D¼8gdYµYDUb"ïEQº?=‹—f$M€ÂU~¨¼pÔ×ó?åûïÁRY…ÌM[¡JÒA_P„…¿ÿ#Z¼ë•ïš‹zâGEÔ÷ãï•¾ñadnÛÄ‰ãõx1@½MûÑcp…üŞlØâ=–ß8¢–âz¿8OC×edm{‚†´J¨4‰ÈÛõ<:Ó?Fç™“!Ë×ŠÂ({ûãH}h7|İÔë4:ŒÁaëËË‰ã3°'7sØqûí¢ÿÛ‹D½PiuÈØ¸Î+ú/}=¹ºPçBÇ²Ø†ÔµkxÏáêëCÃ«™<
+ê]‚¬ÎŞÙtÕu5¸ñú+íê¢{Ù”¡ÈNRü\¶2’¡œºş§\#í]hÜÿ7¸l¶ Í(4˜·aÒÖ¯#Ãøìµ×Ê§œ0,ÙF{ºP÷êËHHIÅhO÷¢]’@	))ÈÙıW¶{p=8…<É…Èİµ‹ÃMimM·ã.ÿÌÕYLˆ‘G¡T¢pßKHLIÇ7^!ï¬wæFqZ"$r{šì$>tµ>Âã8õc®XœgŸgÔEn÷;äÂ_˜X<í÷ñÁ(ù(ÈsÓç‘í­DöÏv ñoø‹„ùÎÒ/*†zf¯ôœıœ¢Å5Ê²¬\ÜçvQo`ÅÍ×^‰<>~ûgœJr§;ñ¸ÈK»ğóß`*Y
+ÃÂEÓU‹ëkÂ(có£¤0ÜÃÃè:y&@9:šïšÿÌSpvusòŒv÷”ÿè	yaÜ•ÿÑJS;Nıî‘aîfoÙ1µBœ_Š@¼÷ÉÏã*éùì<'‘_?lê!ÿ×¿â †òÉ`ıˆÿÏ/5øçØ gOğ–ÚÌlè‹ƒ7Š£BÈRUé›èAÏgçÔ¾áa¨h†½ıı0Ú¡w4!ˆ <ÈIï…/áqÑÌ=ÙOi<¤v|‹C r¯÷/ä¿tëÕkğŒŒŒk‚M_¤­[‡á¦f
+ìE1áÉ\ø0Œhÿxh¸r‘Ÿ–A©Öø‹âşSé
+ò Òé¸‚5ñUr2ì×ª)Z|$:…1òD@ vS[Íjë›ÅOh†@†’ûÇÉ19 ˜¿ïJ¿Ğb´³c¼N¤_‚g’k¿QÃs†ˆBĞ/(š©ZÜ]†@ÚŒy¾#]Sd6„56F©6|ù]ùğE1—ŞÙİÉm4í¼ùá˜¥-„	$ªÉ@fÃ‹ÛjuíŸ_;c‡î¡	³õÜŸ":¬ÃİíHœ—„´¬°ÚÍæÊâÈ ç8»lö)x‡šnjYY…”ÊU`î6‹d{œc41ÚŞ¯ÏƒE•}‘ æÊGv¸6ê#P'%G&`¶ˆ@F®—}*‚á®6™¿çÊwÎ§^ŒYÉLÍd­P½.g’¶ïäç¬(BO?‚/ è¥¤6m°GŠ›raÄz¿êÃA_¡R!÷óD<Şl´·Ö«W0Fi©j³¦Ò¥Ğ¦gpâøÂˆ‘÷@”mÆ‰èö¸ÃyÄY]WQò–*=j£),ÀÓ×®‡./ŸÛO=çÎ¢ıøÑ {©ã“cÈÜü8æ­}„äFnD³‡J0˜8ÉÇlSí4V‡0^ËõaÃ††£pcÙRª®à.~Û±ÈÃåx=è8ñ!­Ôhá§‘ºñ¬±Ú`æÏè’âXÎªÿÆlü×­6Âz®£™×jõd¦ÆÃ­·y‘wll¦*A¯kˆ@Ì†rÙ‚Ö—
+Âô@NZ›Åz D6ŒQä9ÔÃeíçÃ—.¯€'€MÛV¢êó
+©[7YR˜J—m
+‹UúÂÈ˜öfÏEad¯¡H/ıº
+‹‡Œp%Â³!L›šÜ»Èóò¯Põ‰`i¯¹Oî$bf‘|ZÑqÙ7§ò¾¯h*^F=¤’“ÜZw9Üæ³¶¾0FôPSO[ÕŒ0–-AÿÅoB½÷«s0-*ƒ’½ÌUĞ—Â~½šg1j,)4A»šd#'ç`C=ºÎÿ7$¹“+K–ñKløj½5¹8nÏ…é˜ìÕÕün(.á#„¤êUšşõwØj}m5É¤T¬¦dûÇh×*"÷<úkhzç cá¯W&&ÁXD«ai6ßZ+Ö‚C•NoúSH@ÇC%×Ì´äX©òı.7êCzj/åê|w‘vâh‚‚¥ZĞ0¨¦`K‚ºuíŸ|ˆO?â	C8©Ræºm0øÒYÛOÿ›Ö‹‰c	3„1ÙëëHáĞÑã´×óU£á¸Ì¬bwò`WÚªG¹‡8ØXû­Àí;y¯{!K¨!ŒØöÑQÆ@Æ°šV‡n¹˜Ü3s=­Ç×hù3µ2)@òì8@Ã·›}½‘Rµšêò{†´iQÙSlq£ıÕ„2ı 
+G öbíÇh%„ƒ¥b(°à—{”MûúÜå#)3yOîã=Ki?ıŞ]~‚»s;!	Äöçi:|ˆöşñğ¸NşŞß‚¹÷wëĞèM(|ö%~o¯Û‹Æ#ûÉp, y·9Òûˆå…M@yP!Œ%”ÄNn´¹¼›u´PøéÄıš”™‹ûöş&uS¨÷Q õÄ›¸Yğ1èÍfAa	Ä°jiæ¹7lšBM[®X*ÀHw%‰uÆzSi
+vşjÇ|º¾<‰ÎsÇä^³E¨Ğb Ûëk)GÚA‘æR¨ÔjXÊWÒ¬´¡Bk3ÅuFïˆ4z3æo~Ùì e.Ò¶y­'Ş<<Ejf.Í ‰è‹Š‘¿ó7PÒVtÌÍg{ö~qŸŸ¦M~XClhÌxpÒWm„‚æĞ¸\ÚõìÖ»ûáh¬GTÜÖ3bJ0§"ë±_À\¶œÎ|™…l»^-¹ u[¶Ú+”H?ı&›~³Yucq9Ì%Ëa(*#âø²Y9³uÚN½+¬ÁìÇ`âçœ"ÿÅ“rò½e;’óï#ùˆÄCÅ4/6JKoœv+MÌZÉà¦©èšš†(e&-HHÍ îùfÕÙì<kï së©#”t&Î$©«`Ÿs’@~PE%0•U§VNñeú÷BäuXzıcc<'}ñg³êÖÚË°V_nzÂO(Ÿsš@ÒåĞĞ´„ï&ÆROèOE½£Î˜m€z#+œ´æÌÕ×–Ï#RJÆDÂı.	.b²~ BF¢ŞPÄI ˜Â+¾pI ñuÓ7”Š)¼â—_Ç1}CI ˜Â+¾pI ñuÓ7”Š)¼â—_Ç1}CI ˜Â+¾pI ñuÓ7”Š)¼â—_Ç1}CI ˜Â+¾pI ñuÓ7”Š)¼â—_Ç1}ÃÿX¯
+*`4È    IEND®B`‚PK
+     ¯pS .g:å©  å©  F   WSVEFolder/Medias/{1dfad926-bef0-462d-818f-da229ad1498b}/thumb.fsthumb‰PNG
+
+   IHDR        ƒøù«   	pHYs  Ä  Ä•+    IDATxœ¤½i·Ç‘%h×Ì="óíØAìÀU¤Hª$uU©U’z«úP3§gæô—>ógéê>=ÓÓ§º–‘ª´ÅE¤H‚ @€Ø÷·/™îf6Ü#_ UÕš8@"™KD˜›Ùµk×üáğùÖİÍ2à1JÛ¶MÛËúú‘­Xv§ÑŞDÕİiz˜™™•§BÌ,bg0‘ƒ]„BØ"4£„@!ºbŠĞ!òbç‡î=ÔŸüé¿Ÿ[<ÊÄ¡iš_ÿÃ/®~şÑdûÁKÇÂÑ°áio”ü^šƒåk7/>·C˜ƒí®=Zin¼ğ¯ÿ§Ÿx>QpP9M	 ®“C'ãíõÓGVŞıû¿üèƒ_öv»4RÍî:½. !´"Qmìÿíÿòïó]h—dn§xõÊ•ë—?øìÃ¿ÈAq
+æäşÔm"šı'€ò	Ó³€òârcËafÏ¼,ôïDinf œÈÔÌŒÏœ1sy²~·“™åìBpv€ØûÏt7sU 6€œ˜ÍIuÜ²
+À ÈÍUõÄÉ“·®_m™’$4DIaîäî0 *Wë]JD¹´[›[ÌÂÌdõ2=]9¹“šF{?63*zîâ BáÈ‘#‡œíha7ûÔ î~áÂùó§<¹ûÙãG7Ÿû×šá÷;»,nDD‡ " ÀÌÌlê“I7??Gîj™ˆÀ Sı ª/v*—]Öœ f03Á¬ü_"'2r!•œ°¶>§øÚã ÄB ¢¥…ÅÏ>~ôP3¿°“x,íÊ‰'O?ÿò“ÕMóc·Ã+Ë¬h·Ç)Ï\|Mš¡QùS‘ˆıAN¦OŞïWÿÎÏÙİ‰ ”õ²“˜ÁMDĞuùÈ±“ê­qëAâ²löG\şüÓœ3‘3Aê'=uLï;÷GyŒçé÷O=ákMD¤ÜKÀ™½7šVF#J9‰ósï÷rf¼™r'‡«“ƒà¦šáN`"ªl @ ânÒMÆnäA„Ú"r&’¥Ç—ÿ “Ûx¬İdqØ¤Mrïı/Œòé3g_9{š';‹Áö7ÿ$Œ»nkkëØò1Ô³ğrxæœA¬š¯_¿vûöí¥ÁÜï¼õşû¿F2U˜±™)©ª•0Ç&Ş¾}ëô›'^\ÊUöişØÑ3/¾zéÒÇnPïúOß§¯‰_kï—üìëŸy Y8Ôx‰8nfZíÏ °»;fFÛ6D‡À"$°€Y@\&@`1î ' DWw‡¹¸‹;9±;¹Ë4ÚíÆr^|ãÛÄÒ8(±•¢r;¹¹¸ëxy#öxîàÊ™öÇÿêØá“ËsËóaîúÕ¯Ü¡D[{ãÃ/œjóDD\¼¦DĞ~-»şÙo?ûíoòdtîÌÉW^~éö­[9wÌÂ\±p	Ab#Ãaš·nÌ/­¬>éÜp.”†9¯^½ìn}OÌŞôÙöü+¿ÖÆ³o,GèR"f.nT>Ëİ‹çQ¢š‹;ÉôcÍ˜œs‰Ğ4ã3ÌÁ78™*«ª«’FRvKã½½IÖDbaw¸¬İr-&°3ˆˆŒHüÆ·¿ÓZ›L*¡ÙÜ«‚C=¸»úèÁüÊaw¸×ˆTw `êŸüö“<yê–WVºlYÕÌçæ†)%ê&¦dFb¦´iÑ´âx òáoşnåØ™¹•3îD`¹›[ŞÙ}~éªHknp{:°îßşšËŸvÁéƒßá1-€ L„z¢`¾¢Ä[3˜93DB	ú€3#bŒ9gU735'âú!()ËÉ‰ÜÍÉŠ‡\Ä’MÆLÜ’3Ô‰ÈaæÒ˜ÀL¯0Bàe"Àlqaáƒ/¿!	bj‘üÁı»§.¼
+i¸_”Sk"ÂC`n—––UÕİwwv9¼»»cª	‰™˜Á’›6!Db™ÄØÄÆ=¼qr°$2çÜ:<x›üæ£ß¬>Y•Fßà,ôL2é1±Ò>o¤çŠ—÷©*:uw234«±¸³K¨h‚Aì$İ9%í’ª[9+õ·,1¸Ã•”Ùrpi#5"â
+	`=;¦ğµØØÄŒ-İ¹sıêÕOÉóí`ok—¤yp÷Îxown1ºñ³‘‡™_zù¥k—v¡q0ŒF{D677wòä©ë×¯iô¹Y&hˆ4œkšVBpâìAB“<ºFÜ=öR3hŒ("[·síòG–FìŠí'¸éøs™pÀ°ï[Ïd¯g0ÈÙOW×ÛÁ~
+«„ ãI23"77OÙ˜D˜à\É + H‡&¤ì);f-E GÖ¦nâÆfNp )»äIOŸëSYº `Dù‹/.©N8baaîÉÚ7J{;Ş?·´ÂÌ0˜+¾Üİı7Ş\½síÑñxÒ÷ ÌÍ8cpÓ„œGæ“¦åØp ÜÉ˜[Z_üÕ¥#ƒf‰œÁúù'ìl>€æàÙ§«
+ûw¯¹;3öò~-:ö½êw<»ˆ‰BŒÑjll.hÁİ=Æ0é:UÅ´ 2%r13€‰™ÜÉM…	Ì¡‰CbË¦f¦FD¥âvò£ÜİáÆî=ÔdÀñ¼µ;ö-7í=yòˆœ¶·wR‹ ›º¥/>ÿìÅ¯ 1—[	''š_XüÁÿäÒÇï=~²ÊÖ1€‚™ÅS6w¸{Ÿ‰Q`\¡Ğxy ËÅe¼µşá{¿²Ü¹››â¹8V6ÅÏ]Èï]šq)“KXƒ"£˜…ÍHU©Vp¦ªªfjnnnåd˜l#(AI<¶¡„Á|Ó´¡Ä¶m› SÕÎm¼örš.ˆİŞ¿»»³MÈ" C‚p@Ûàáı{ÿÇÿö¿onl‚¤BÆµø#r2óå•ƒÿüO~rîÂK{ã1³”âHUYX¤¤j¤L)“ª	‹0ƒ9†ËgÏ¾<.<°^»riooÇ½r=<s ‘¦iÌl8R­ºö¸±ÿ”Ïa2ÇEÄÍ‹7˜[cêHÕz§DÏ—¹/q·}!ÌaD$¢’!™œÜ`æ)¥Ôå”e~şÜ¾ş\§ÿ(‘»æ4	B±‰$îìÌ‚Í9,Û(ÂÔæì€ÃŒÜNb./œ<õÙÇïKˆLÒ´'¨‘“€ƒ#dÕIç,&¡4ƒĞ„áÜ#‡ÎÍ/fDqZ_{xıêe¶LSr®Ü™b­………wŞy§mÛ¿ûÙÏbĞg©şiÜÇ×Æ›)5Eªêæ}Ñâ½«QJİ`0˜Ö‹î0#Ó`Ânäp€ &r¦˜=¶f¸ƒ„ˆÛacI»‘ì©3=¯Ù³œøRÜÁî©	²¸8¿³±å ŒÔIaİâ`nåø‘¹6º9‹”›Ã€“»³²3;ØİY½%¦d"ÎX¢p"‚f›L4]Xjææ=sæä+ƒv9MÜrºzé“ÑöYÂaĞ;{6Oº………ƒ={öÒ¥K¿úÕ¯,gsf&rw›¹êØíÃÂ)Û÷»mê‹ŒŒŒ¸€1Få1À"ÅÅ¬˜ÒŒr&VuçPÀE	¥®$vˆ³€ApƒzÁåLllbdV2—™™÷gÜÓK2ÕéU2y0/¾ôÁ»›]C€EqcwãÑh¹]l#›2²1j&vS0D ,y”¶··Ü=Æ&Jd"ws!šrG{”—{ñÕÓ'_[˜²€ºõµ‡÷o]Uİ%¦ÄƒÁğÏşôÏÎ;GLÁisuõÿıéOŞ@jä.3ˆÃänîæÏ²º_“ì¾®JZØb2R×‚+Ğ4‘K-bn ˜)™Rvg¸E" “ôå³„ °;Áàì‘Ãx¬¹S7avG0·ŞËEÍPìDTx_Á3`p6å´|`ag‡b“%Æ4q2òd”msmm2ËBk!Öì[
+'!gM9œ…“æ&6Ìl…/ƒPb¾%Vm½8l0‚°ºÏ>ùÈòD@A|ûÍ·O¾ „­ÕO?úğêåË£Ñˆr/•m‰ FÖ;9öQG‰gSvqÖHî^ ÄS«‹™œ@i–UZ‡ÌÔİ…%Óş¢0s5G&erv&Ê{z6r†\Å•R§9gP¡Q¾ôò·ÕX¨x÷3K-¿(’’MºñÖÆúÖãÇO<¸uçö—Ã!B„ˆx"v¤nCÜoİ¾}áõ0O'P«™Y—;“Á`¨ÙÜIÍSÊªÙK¦+äˆÑıû?ûôÒ|Ú²šé§Ÿ~tïş-ÕD'
+Ò¼òêkòÃ¥lïğşgŸ}¼»ö¤ä's„“Kì#ï‘†÷¥ÆSÕË3VLH}Aı”Á‚„¾Ñ°¿´ëëœBª™¨.ªmDP5€ d\¾ŸæÕ^õC™œÁA&£ñÖÖîxìLfIÚá¢C¦ŒßsWÂO}kõÑW_|rãÚµ5Ö.6‘c ±Åİ”…,:wîœH˜V±S¼R1OÒDBhHæææK|2µœ’š2Ût¹	Kñ«k×.ôòË¯_¹|éİw®iLPwÎÙOñÇ?úW›|ğÁ—W.OÒH˜ÙËrg	ÜMµ&+Lâìdö|SçÙÅ
+›éÓ­È ¡’ÚÌ$ˆˆ¹«ª{í¥¤DTZ/Dû_äf9;±¸NDLÎS–¥®,Bân¢“İÉŞn7ÚK9ssœ=wàêJÏŸ4à¿uíÊíkŸMöÖ÷v7Ì& a– "3{ÑIv¶wÎŸy©išrA³+ÀçÑŞÈ	$›@ä%„”~PõêšO™£ÑèÁƒ;ss—.}Ö¤9°²ü'?øÑ{ÿğş­[_Æ»î
+"‘iùÅ0sÙ4ş1s)â‰Ğ·Ÿ·Ö4DÕ’ã™Â9„Pî¿ˆì‰0³L&¦ª¡=æî%b¸›«©*0™²@Îp2”Ô2v¶ÒŞv7ÚË¦"Ô	dxòØÙ++ûÔaÏuô~NZÿö¥¥¥Ôu9'fwRƒ!„†…˜£G3%ó<ê&×¿úêí?şêJU÷¹Ìk¬ÛÛ;v·›”rVe Ä†ˆÜ²úÄİÕ\È²e?vôı÷µ·³å–Íà…ùùşğ‡ÿğË_>|ø P³ä¥#:COõã
+¡ká3ı…ÏıËİJªzÊ`D,ÂA
+Ö(÷ËÁu‘0‹{‰ˆ*mçúqäwOæäj‘Ü88ÇÀ&BIÙ¦èÆyg+ö4wä&.‰|úô‹±Ùúöçs9¬pWÌ|äğás/¾xçÆ»m‰ÍT‰•86y Ìd£qGj8rô˜û4z½ŞW €».‘³¹†ÃÑxlfs˜İ@Ğ¬•ÈtóæÍ½Ñn—&ªÙÜMóÏğÇ÷îİ¾ç¶»Ô=³{ \{¸Tjj˜•AÎ¥d²ÚÓwŸY…Åı 8+EÁô•ÁŒÜ”È…j{¸”RpCˆ`F"6fŸ†F³B;¸›w“œRÎ™ÖRBE eÍÖí¥É8w#×,ä hÔyqqá[o¼)Ìê}÷º%^=Ù †eç ¯¿ñí6Ò¤9û¸‘ç½Iš_:’“çN=¾÷pkï~”¸¼´$":ín—²’¼”r%3ìºÉ$‘›¶ÙÜİ-)Y`^\Z\]Û  €ÙE?º¯9»[‰Ÿ^:ÿò«nŞºI6!2rY¨àÊ*¬@i„ÂEÄ«DÁ& ¬Llf³¬½Ã‰lb˜ÁÚ›&H¨>BDÁ”F¹„T”òá “³H+½/8Ø¹Ü$îæ®¦Å)œÉ¡Wx×åÑnJË™Ì  ‚%H¸xáâüüÜX0í±=í]€ˆ¹4ƒá«¯½¹±ñ¤mÃ¸F{9ëhÏŞxı[o¼ú­_§woŞ{%¤”,'D™bŸTAµ÷hšÆ£±›YÖ›¬	DÂ,¥v1_\XÜØ\,¥)Ë n2!2À›6,.ÍÿÑÿ³İñÎD÷\²™¡ ÀäVµ8eı9CÈÉ<ëÔ÷™È	#s×²VÜÉD¤PN±	1rˆÜUMÉAD`L³ÁØ °ÀÉ’ !°ª¹{ñ’@ÍÄFOÕ~ÏÈî¤Ä´KNH]Lrîˆ\L¨É|qiåµo}ËªCõ./8´O;ˆƒ…YİƒŞzûûW®\ºqóOèÔ©£¯¿özÛ6¶wFã1@féŞ[Ço}uâìy´Ñl³†
+Û@æ“ñnÛ6.¾´¼rçÖM°´í`aaa2I9uãÉXD*ü Qmp‘«êÂÂÂ_şå_®®®v]×ã”º¼˜L*L)Üİ@Ä¥Ø1ç»D@DÙÕÍŒÔÙ™¥mš&
+1†Ãa!º Ú'i«M4Ô\ß_Uñlb{q_	’r2Sf³R?ÃABÈ¬URR„*©j–ÒAÎ–¹UÜ_«C–ƒ‡,¯ôZeÕ¯.K¬$Q¢ÚÒy ƒÈ@ÎŞ¶ƒ³ç.,8´µµ™ºîÚ£Ñhgmc´½U®kgwçÚµ+'Ï½(ÌÏÖœ=jJI…74œ›ËVÛª'N¼}ûnÎqc·)iï^×)X__¯ë³D¼>ÍBh 1ºIªú€ˆHlĞ4n*NäLN4Ú6)µoâîÃ±Ôèéá($VÕB•èYB-JŸ¬›tN&U€‹¨¦~@æ(]i"VµœL3•pÜc×b¯b2±}ëíïÄfØ¹QßsÌoïrä€sYéî[[;{[«_\ıüÆÍ›;Û[ãÉHD‚„àTjI$†²‚BˆÏTÌpfM–:7ˆ„”²™‹Äóç/nmîLÆ{\h=2¸O˜ª³{:bÓsÍ*êi‡¦i„%%EE‰Ä"I„Ú6Æ‘ÂÛô7Çè©˜åõ qlÚ&6mÛ’‚3Ü{Ë~Kn,dÕœ+$%¯M&xÑ²‹s‘/ri)©•²§HK÷wÿ:/\|ùÄ™3Gò@Äì<CMÍ\8Õö§æ,Ä·îŞşäÃ÷7WªMÆãÑ¤ëRÎYÕ¢X8BsmsãÚ—ç‡‹ˆ-P!/-1™{"Í9Gc ,<?7wúÌéî #€¬¶àI
+F/ènZ$MÏó	¥]%AJ!‘0‚H;lÛŒÜˆs«=íÿS›Á‰hæç—–—:täè‘ãÁ9¹¹ƒÈa¸‘¸”"É¶+æfF¾ï¸”v<»“i‰©LNUJZôsÓìï›Á…—^Ãå„ "£b2î­eÔ³ˆ¦É»É×®\úä·;ëO<È²i·¶wSML Ÿ<qâÁ“ÕŸıÍ_Ï/øî÷¿ó’CÈ¶67£@bˆîŞ¥®´poŞ¼µ¶¾æî<ÕÎä
+fÎªµ¹U\SêˆÈT¬”Ş …! N‰(Å(±$&"2«aÖKZŸ:oèfì¥™?xèØá#Ç¬æƒ!säŞóg7‡e3+0Á`"ÌğœrÓ•v™—2Ìöé§iQİË„­6ªd®–Z ¥••ÓçÎg°Iè“z•bÍ:™õ©æõ'?zÿİG÷ïYN¦æ‘ç1È¸PëN¤ÙÍ³Q0ˆ¹9ù›ß~óúÍ{+É±àZòñŞNê&šÇÃvÌæ
+AöüŞ‡ï1\@âæfä^²>%.^¼¸±±±¶¶ÆÒË¹¦İta‚A²†ƒ0pPnç¨!ˆ v(‘©W/©Ì$¥Ê%€Ä8¸Ğ,;vúÕvx(¶mÓÈY‰´ãŸŠõ…ÔRÿ 1•àVD½îS1okDæ¤ê…9{.'M?›9c£æ$_ß ›y1=~ôà¯şëÑÉ¨a|âÙ„ˆ!HK,PE¯>c0»cmmõµ7ß9|ìd"Iªî’ƒB)§®›˜v)çõõu£]YäJw8ldÓ¼åäÌé3óó·nİœafûµEÄ‰ÜÎÉpØ´mãîª¹‰\da,l¦äÅ9Å`V
+v€€$	!ÆšÔ¹Ùàø‰‹'N¿2É‘*>èçÄ©J>+æÑ"Q«¸¢¤4U'8WÜ]–‰ÜDÍÍ,gÒüÍTwÏ9=zô¨iÚMœ¯?˜î_]»¶·³Õ
+;!q" i›FDL=†ƒh¶R40ËúÆ†i&Ha™ÈÉU“ºÏ{;;ªêf»»»¿üå/K1Ó4ˆ¤ÉØ¼"h÷’]Ìİ9ÿâùápøÕW7Bh€i“«ÔvîN`;zlåÈñ¹”Æf¦ª9ƒ¦ƒËt³CÕÕ’æ¬f±i†Ã…&Ì|ksïáÃ»{»a¸›W_ƒ–\|æV‰å»¥”ªê™H¨HhX`"äœcæä,äNÙŒDB`%63Uh.V¶oô0Âêê“_]?õò[İ7¶,ØœÓ{ï¾ûåÕ+1Y&B¡i{Ü©Zã ¸S—SC”a×uä¥äª™«€Ì•H@$LOV}uíÚ÷¿ÿ½íõÕs¶n’ xåÀ…ùù[7n”OÄÄµs'u»qëÖ´;‘J˜š¤Eî^]ÛÌ¶×¶annxôèqfN]vš]U³f3ÛŞŞI]îRî&io<îº‰™=4A Û[q ğ§Ÿ|:êäø¯—–c_×[4F5‘Â 1ehiÁQêÔÄ ªÙM¡=µIFD¦uÒåùéÔ%Öv“Éüÿçÿü¿8væe™¥éÎA$Aşê¯şÛÕ/¾hI#‘9?°¼Ü4:™a)CÆ£»‡’ºMR×¥4?€€İJñM{»;W¯|Şwîİ½ãT]%ù m;¬Rô•FïaÆLêãñ¤”¤!„¾SCÄ€—z˜ q“½]O‰vwÇwï^7U"ZXXÃÌrÊfªfn¬j]Î9“j(hˆ¡.,,líŒ8G¢×¯æÌúgš¦ç–)4%·²X„Ylâ¦bgÕ¢.
+AÜQµS‰`+
+%sw›Up•üV
+);YÊİèWÿ³ûïNâT4Ä0“ëÚú“ŸÿügwîÜ„ºÆfwÍ)/..80\__t9%eã")<uúÔå/®\|ùå¯nŞî’Mºn<Ï/˜Wø:¬­¯F{_|q™L’ïJU‰IM76Vû>Œ“ÕâÔû2–‰ u€¥–ÊT×k•K…8blÆãÒŞØÑLªóBäLƒ˜#!D0›ùêêzÓÕ‰YJ%ÒMvG£­ÃsG‰¬1Äˆ Ò+1SwbsW0Ê™¹“‹ %w×Â(
+»©:y&g'¸70"Svv/è¾4˜ËÂ%/ºLòä–n_»¼³úh~å°JŸ:Øêê£ÿúÿÇÑx;P—İİ¢£•™Å<¥œßxóÍ/¾ølmcÃhÂà¦‰"ÍÅ—_¹òåõã'NŞ{´šò^Îy<™¡6'‰Øimõ1#•†rá¯¹^”@ººö0§(-ôë«–0FˆùrY…Ìu˜E„$Hlš&iëºÁŠıE¤&‘“¹e¯„9
+-ÎMcCjPs8„x´½öÓ¿ú/§NŸ;xàà'N‡Ã@ûÈÕ*ş5'3¯œ¼3á0ÑDd€1
+ˆ(g7u"PÑ\•Â«LìÔÆFßƒîs›%ö\´…Ì )yMvß{÷{;›,‰lBÆæ ‹Ìòxmu8¿xèĞæbº©ÈŒ¸´´4CÓ,-.uİw)%ê%
+ÚØXÛÙİe÷8H`a›kG£l®]î¸è|Kn(ªT‡(Ä#—êlDîÄ^U‚3aáĞÄã¢Èêêjùvsf–+v÷vwvvÜ” €;1daa¸7«f8„CYLd$d°½É¥õÇN|ôè‘¹áïÄškj ªªJ^”dÁÔ&Dè˜½iÂ`Ø‡sm;Œ1Îòiß|L{?#»v•vr‚ÛÎÖÖ/~ñóÛ·oƒk~ìÉW ¬Ìˆ1.¾xşõ£GÎ,-!røè9rôøÊòÁÅ¥¥#€íÚ4§kW¿ímK,ÍY'8ˆQ+ğ¢­ìJ‰(a“"(-0Šd€H!4
+ÙÙÑîGõ¾G_´ª`¬o¬_¸p!Æ¸ß;`˜Jvğğ!griÚ¦mMÓˆ pÀÁh›˜ºngg+<Ğú˜[zá€™°,]ÆªÓ„ÔK¦tÒLİ€i ¢ò€	4ŞÛZ>pXÉ;Yú»¿ûÛ‡î¦4Q› 
+&ì`c„áp1†ù…ù¹ñH'còxİÉVV..¸pñ•å9Ä²Ì·¶6A…1Ö÷îÜ»wS­8Q™Exó­7¿º~cgw»®Q¢’¸¯@+%U$R[0 RÊîZı—ˆÈ•ÌÍÙØÍš¦q÷CêRÏ+8³ÈÒÒmÓ$˜×R*ç|äÈ‘õf1âÎEhf€ƒ£Çïííå”ÃÔ·¼GåD{HîÎfRufVí¸ÔÎf¦dÙ5gSîµ[è›k}, İ¿ëø'âŠ~óşãG÷ÌË|¸ƒ™¬„R32‘/.iÍã¡C/˜âÎ»{{»+Ë…ã…‹/‡(Ãùù¬FÀÎÎ®›‚|<Ş½qãZ×‰Œhªˆrf<züh{g»&'ªƒÖ JŸÅıÉáTX•€Óä    IDAT¤ÜPf1ßµ¤›	ä…$KİÍ›7övwP§^Xtv÷[·n<ujûòçÌEı/fFNªÖuİ+¯¾rıúa Dª*ƒÁàğá£ƒ¹eSŸÎ1s(îRr+Y‹öD‚3S71,‚‰İàÍ”’våNİ|f|öëc#¦Ÿ«–>ûä£“'^8xäØ½¾ºş˜H­ô	…Ñ´C7É¹—šRdÄ7ß|[B›Ò=qòÔÙë×®ŠÄØ’²6±M9«ÙŞx¤®“Éäİwß½}û¦×tÖ‡nfşòêU‚0ƒœ™”­*æb+UŒÊ`N	A˜C!–…®ë&İÄÌŠ1@DğlšÇ{£ÉÈ«ˆ½4ÓQ¨áİíí­-"TİÊùììì¼óö;î?2·âÌ¥l:~ìøŸÿùÿšùÿôŸşóÆÆZ×uÁö©H+‚h/ÃÔl`³Û€Á$å®óÉØRR3[Mµ¶©‹µªßö+¬Şb9ukëÿóÿõ§Ï[ÛÜOºdI5«©Sb—¦˜1À04…>vèĞ‘I¶¦Î<˜kßxãÍÍÕÕµÓgÎ«™95í Æ5Æ{»»[—/_¾ùÕu³ŒP5Kâ^GCªîP•x^{ÜÃÉÑ‹)XB$wÚœ3ˆrQ¢Õî+y ­z3ï‰#÷ÛwoÏ®iî[¬ãÑdcsëä©S÷îŞ/ë)ÆÄ…R'üğ‡?ÙİİÉ9É‘ó‘ŒÌÜÊƒ»OK]	¸ÙÚÜ¡Ÿ[J‰Ò„Ç#ÚÛÉİX]ÉnVº|ÓÈÔAiÚÿ)Â(fˆ:eW'{øğiÊ¹ër2Mæ™Ü˜y8˜¡	pjÚfnnáí·¿ğğqˆ°DÌƒ¶=yòäh<>tè°“€yuuõñ“'æ6Úİv›üöãÉÈÜÕL½4_‰™ÅÌ¿ûİïİºy«Â‰RJ	C¤äL&†—™g‰ ;1K0BÊšRVó.§v0ÌY{§FıAù!&õğùyVU“Éj$¼ıÖ;wïİ+šv!ss‹‹+m;\Y>xèĞÑ0åôfZe5”UÀD"I™rN˜Ll4ê4×Hğ;ôı•^…Jœ0	Ã]Û&˜¦"æî—¹™’’%Ë!Ìıáşğôé‹f.3ñ"ˆÌ/¯œ››ë»:"1²pˆ"_¾|	¤WŞ‚ˆÊô Z__åÌ\OĞanUÇ=­hµÅdÓ¨cnN]‰ÏªûCK«¨j«¿îğÂX$ºwïş7O¼pòÎ»Ìx ›››eæ‰¦JãJ˜Àp#U'&˜+‘Ya,!Rç£İ¼·«ÅZÏhWûÈWsw+QĞ·aj3“¹6-½î9@j¾“Èüü°mÚá`áĞácÎ
+EQÖ“1¡iª™iRVRQ³Á«Ç?·®Á"7oİ*dOÅ»e*Š©ôıãd%ĞCÊÌ,!öÊÃ¯±D¹uŒ¬Ÿùèı¬¿A ¹ƒ¥ëÒ§Ÿ~zğà!"0„%ç:t¸ióŠÛCï5ËüŠ›9œ8gsM¥K´³=sÎZg\Ÿ¾d=S“Íhì1Õ„÷h—¨ÀK e«£’,œ³¦óó-sûäÉÚ™ÅÃŞ«¦WÉL6/X+‡ƒ¬šR&ŸçéwUÁ:˜{äVİ½Lês¥mZïIa3P•ÍÓ‹3È	ÓéãŞWz…ğ³ªM$”iĞ‚Q $ª#Ë`wi}s;Hˆ‹ÃÃ‡>üÂÜÜÒÜÜ‚;iÖ2ì@}w±&I39;	•É"õ\ÆÍ•Æã”R™…å©m¾æè	¸ºJşê—3úÀ×c(€Y1pŒÔyÜ`îª¶0‰Âh<&¯­Şê¦ez¢`"5uÇŞŞÈÌ™™¼P]'¬diw¶wûd‹b±RsÏÓx9y#s=#İ :` 3OôŒş‰¾Â™•i”âšJJÂãÚ¾‘ÙÌh<î67·|áÀÃsÃ¹²M!ìƒgòÚŒ¥‚Ü‚eQuS¨jÊ–;K›ÂM˜ú[öœ{Õ+æ} 8ãUûÏ 'ŠÄÁ,AbMÛŠ†ˆD"QeU™Ÿ_(ŞÄœ™ˆ¬”G(ZsU ëkëïğ!ƒ<qpnÛ("š%gïº¤Ù µH3ÂEá\ $Ñş*â²«;p!+±oÿzVÑzW´>l”ìnNTDï}Ì,[™T(Ï},&"æ uS XU767Şÿ½«W¿|å•W^xá…åå•ÊY.¤vé;Ã¤’3GİxoReOÎ® ^¿ôŒcM³W1ÁÔz4c#ş '®:|³ 4ssVVÎœ9{èğ±(Ã¦3§íÍÚ'OÅ!bNnPóé¾ Üõúõ¯>şø£İİí„ˆĞÇÇE†k¾½eeš”¡D„²sAúyßŞ%úì*´™Š¹¿^dEoD÷Ò{3¢Òş,.7õ-fê©Ê"] ªXz¹n.DòyggóÃß[^Z:rôèÑ£G›¦	­´F0§²3Lê´›hN4'íÊQEÔm}M$D.zLXÙ‚ú_•?ükzÍÌ¡,ùåï|ç;Kn¢À"NlL 81ÜµpfTöí W½uëÆ¯ı£½½2¢Yˆ…ó"ì“‡{Ù,±iJ?¨Æi.R
+CÙ¼…Ë€÷t“ƒŠ©8H…5L!ÈI‹Ê›Š~Ì±s¦ª¯¢î÷^¾8í‚2‰¡,fC"âNZfşËNz„”Ò£Ç£‡îçœÕ,˜2<SNÖu:™¤ÉØr6Ugç|İ]ş]ÇŒQ÷ÛP§¸Ï¿òí7ÿà»MÛfe B¢€E"s ”±­škw*LÄğõ­ÍKŸ–s–P˜^	ÓÎN×uyÃ1#N*çÈUVè@ÑjV¥«š`Ò´ƒCWövwš80×®ërJ…›¤hü
+`.”ØÒÇÆâ>{½D…6– aD
+fî_S#õe¾©ºªæ¬a´kæ“uÉröœ9'Ssr&â§ÔÎÿ¸0ë|ÓœÆ¨öqMO½ãğ¡CøƒŸ~åmCÛ'	™fDÔí[*Ç  H˜ˆıÑ“G¿øÅÏ··6¹—@WIŒˆç¥ûw»ÑhÛ,B:†5äaö«©¿­´¯˜bT4îxé¥‹ßûî;Ÿ]úøóÏ?ï˜SJš31³÷¶©.¿_oõ6›Ræ4ÍNuÛŸéœ½ô¤9¸P V»;®Z7Ü "	ƒ8ÚëFã”“[.¸Ã+5ÓwWÑ³ï˜Â¼gÍT‚J¿¿0%Sk=Z¹€éŞ%ãJÓ´?ùñ_}ı™™#‚C˜+mP2s‰ñeşÀ77×ùËŸol®›*3±Èì)9iÊnÚ Q¤‰Â‘K¬ü~£t2ÏQ• Ú¶mb x<šØ4a~~xğàÁ­­­ÑhÄeË@êk‚²c$ÕÆmUZù>&ôû%â?„b,t2Ëô&¡ª<ÁM-g-ó•…,)i/—Õı/¹o6â¿ÇÃ¦5Jÿà)kõûöæ-¿mšcÇ™¹q&Ò.µ2+š$¢}×[©hsJÿğî¯6Ö×anäê%M	´ĞÅf^FuQ²9s‰ÏNÊÀªP§c»ÀÊòòŸüèGk«_\¾üäñã{÷îß½{§Ë£?ûÓ?}íµ×ß{ï×…./³5e®ÎdTö×9 ~ù—ä_ôt bA$”İ´œ¨LÁô"U1+°V».eÍ}JSweŸªéA§·†ªT”ª2~Š¾"ÖGÓ;Í°=ëUßXV´ˆH`ó"IQ{H D"åŠÊ\D‘v:’¦ß|ôá£GÊfìlfšµ0´eÒT§²êØ™¦„ış"cï£B…¹ƒ¶¹øÒK¿ıøcç\X]ibÌÍ9zâò¥K"sä™ÜH¦îä¤ÓŒíDÄ¹\~òçæ”²½lğBœ
+¡ŠÒ”EØ)¹»æ<NÙT‹rÇÔTÕÈ=Ìğ`<-ı¦9³˜ §*1Òş?û ]^Şóf5ˆöûLƒ%!€Kl¢H¸ûàÉÎ33C¦Åµô=&g'«›oº’k—>şäã+W¯˜™YeÏ«LfÄV¥ÆB•º PYµ"e°êÙ€±á H?øş÷Ïœ:}wñööÆæööV•†´íğ¯ÿú§;[[n …¬4w]×M&ZÉows;ŞÛ‹!–ö÷g”Ù Ì!pÏïànÖ¥”º”5™ºš[¤™•1¦°`J­Ş“Ï³†~óà©iË•{pÊó\Ÿ¬J›¡¶nc¶	wïß}ñõÑ0š§‹k²Âê¸öå3µmóé—W®\¹Rö˜›.
+ÙŠ@ÉGÓeÂıñÌR›5Ø´Ûşå—_~yåêîÎöÂÜÜùóç×VWËeŒFã®›4!„–W–æ'“ñÎÎj.PGÑ
+»©‡f`TXBŸ¼¸ Ca¡"|ª#&f3Ï9§”S.2S7ó¢ TUSõºOÇÿÏcÖgxŞrÇö	)ndæÀ8¶±6Y'îß>qyÊèO‘ÛT’Z#Ù£G.]¾¤–‹ÿ(”•M“z‘rÌ~¸¦¨g£ÏF/–ŞÜØ,g0OîŞ½$P) Š1Úæ?øÁ±cÇLucsóÒ¥K»»£²ã‚—3ÁúN•F¢°ˆ”)ÅVsU+ñ¶nTt4%U¨;õ:â\&h~ƒM/µâ›şñ¬§äÚ4¨–!•B3æ‹ƒ…ùÑh×¼nò·Kœhºë Â]×ıâ¿ØÙŞ&ª{-r?lQ½ªÎ–ğHgôÓ(õùş½
+}¦„ìşÒrS3›L&{{;5Š—Kq´ƒ£G~öÙgwïŞ]}ò¤K‰ˆB¨û4;y•…€Ì"¡ºªÔ@„@šÕÅY 2%#³’yú4ÏFÖï©XCÚïg°™ZÊQaÁŒı€ı½Áh&ÆMïBD3àfáĞ‘S§Î=züTŒ÷ı	Ô©‘©Š—`f|ğÁêÚjÏò˜’õ¾ÏÆÀj-®Ú§}PİÌÊÖfOÓë@é†Tr!ØW¶“Iú‹ÿğ“Éµ%'fVöîc7ïÙ^//Hˆ!„¸wó Ë=eß ‚™©gÓÒoW/åÍUU½xñâ_|Ñ4Í?b0ß—¾>k•ş¦î§T*Ø/Üàe¸¢O(.Lí™o9wş…NÌÍÏ;8L‡J§š€~>“ÌõÓO?¹~ıZ‘xF‘+À˜îYXJ›J)óÔÃxf3§ık{zƒ®úë°KO­y?;K"£Ñ^	÷Ô×Äû+‘™Í¬·3‡ 1Æb0 ÂÂış¯DîÉ³fÍªš)—Ù–¨ê%Û×¯çÛöè‘#?ùÉOnÜ¸±±±|_à¢º¸Õs¦"×nF¹ŒŞ.Ïñ3˜è7ò~È¶gÄrää‹?ú7ÿCèuÂ,ıîÎûÛº1Ü˜™î?xøÙg¿5Ë\…Ô \:U…óŸvù¥¤±}#Í&°§DDûOcIí·Ò}Z8ˆ³ZUxc¿û n²EÚÛ¼¢˜BŒ1„Ğ+ë…°¡ª©K)'r
+¾÷?|üèÁ­›7º®s.mcxŒMVUµ·Şzû£ßü&ÌœılÚ¿<'w×~¬¼lÛ^šJè{]ÇTGæ1å3¨—Î;QİE‘á„·¿óİeEÔÆÃ¾T§-[fln­ıæ7XÑÄ×ııÊ‚.3‹pœZ¨y=û]}1_ù«Ì:pÙœ¡2I…ıR"¸/‘×}ê‰ˆÌMC(CræeÎÂD,e^Ì¸Œ:»;˜cŒMÛÆ°_Œ’¹çœrÎ)¥”SÎ@”ÁÒòŠ»>¼ŸÜÔ(ecfb3ÚÚÚşÑ~<Î…oÀğÏ³íÂºxúg£ÊJ÷&#ÓcU ,,,;r„zr¥.–"Z(¶Û_ÿdª¼÷şîö—ı4«ÇËR¯¿`¦Yp£Mëµ×t4¡†
+Ÿ‚"·ırÍÍë>s}ó©ZfšµlóU’ağ~¦v#C±ib¡E)(sÎ)§”¦ÀN9§Í­­3gÎŞ¹uk´bœc‹KKMÛ^»vmaaawg<¥·ßşî?Õ`–äAı\,öÿóŠP©QÔÉÔ÷d
+Ù)à×^{õÀ§§"ÕÓ]/<V7é>ûôÓµÕ5ëÅè·zÚ`R¹ÁşKl” SÖuNuÊS]Lo0*;»W2¾èölÚ·ss5ëæLl|êÄ‰AÛ^şâ²°Pt€C"ˆp1„Ğ63÷5[2UMÅ»rVÓ²Û?ˆîİ»{ò…cÿò_üËµÕõl|üø‰)§³g/0ó7Õaø:
+±VH}l©Î€¾[]wwá²Ùû°%Œò»?BˆŞzë­(Á˜ûî8Í|bıšÀ’s¾}ëÖÕ«WKéÌ(ÊíqgôóQ¥ô+ìFYe|têg3ëÏg¿Øz¬YœÌúö•ÌKŸƒ˜˜Ê/±(rÉ†sç_,µ6±1	`ˆH¡‰1„àºQ˜jÎšºTø\í9'&(áî;/;vîÜ¹¿ùéÏ†ÃÅşğ'µætààaï‡kiÆ`xîÁï>Ğ_w½ÜÊR;¤ÿeh±ôíÕ Şüö;‡+òô­Ywá™¦„mooíîí~üÛRTS÷zÁ¤”­
+D¬ÖÀ
+‹Şû-?{’t?b&‘ÄÖ{3i¿µ™­LÂB)]ÿòúáÃ‡˜Y(8ƒCmÓƒI[‰‚)¥¢î&9§~ ÒK{ÓT'“îÖí[÷î?XßÜ·æ”sÙ$˜iD„™•ıO·Vyi…Ôß…)¸ó²Ï‚Ã¨ä€
+ê›¦ùÖ·Ş„Dwub?åLîÙÆúæh<ŞÙŞ^]{²¾¹¾³³k¦¨:Dæ*Â!†ôŠf–/œb>3B¼o|ïT*yÆlÅ`Ş»`(;2pÿDÜÁVz'ææR#xîºõµµ‡î»—ÑsÌmÛçæbŒå$M­ë:3K9w9gÍ¦fjÖï—ó1wÊùÖ­[Ì¥¹3X^^‘çeXOå°¯Ã¾ÿ˜Õ¦‡ï{€r…0fñzGW^}ıä©Ón–uÜ¥½Í­‡ŞºsÓÜA2MRÊÙÔÉh?ë»„‚ƒ…Š¼©2ß J}Ãa–‚B™w¨iÓšŒëâÌc¿Z©%‹÷Hiøzmp•mózÆÕ²å	‘‡Ô”ÁMlm‡ƒá@¤Qó¬©›ìu©›L&%ieÕÚ*ékÀê¼¥ScÎì1´"B(RšµËïOM•°òlnØÇ‘ınµ´e ¼ùæ·×××wwÇW®~yûÎİ½¬Öš¶¸sFBª\°|ÌŒL¤.€Ddj©ZëYÜ02ÍaûÏöL?«Ø‹gêßºè¦Q³¨ÖKÑ¼ğ êÊîm;(¿èHÉ„¥	aa~nanNbtH—òd2šLºÉ¤ËZÆÒ³©ºUf²¬÷Jq›»›€@PÕ×^{íêÕ+9çï}ï{]7"¼ÿƒõ]¥¿Iâ1[¾õGfT6íû»ŸııööNJY³qˆ¢ œKÿ ®¿iÏ©l&µ´êgêê¬\Oa?¥‹ıŒ¦ÌÔ¾ãõÒÆZuôƒ"’ª¶_n… *–‚«;—‡ä`nà†@1š8?7¶­ÕÈÉ'“4éRN=£«jjÏD9ôm¤~ ÄÀÂó7ÿmåÀÊ…‹çÈ½‹å†şæôÔï¿ûFÓ•_»©Æìº}ó&·ƒ6Æ‰,"‡XZ…fenÉû=ü}¿´êæıgö)¨æ·ç«
+ajÅò·HÑ©ïÿ¶E*û¢ Âì^ÖÕ`e»¦"¦AÕV¸³”4E"Nƒ¶MÌlê)ç.¥´+³[vSü†WÜ×–—–öÓŸ2#¥‰jÚŞŞ‰ËK
+tÿ§ìÙo±I{öuÏ<ãTÆ—ˆ4²0#uÉÌËd\¡«A‚XÙUQ[©”Ó³¦Ú\újTµ"u:rêDŒÚÀœ&¶>…Aş?ŞŞ¬É,Ióåœˆ¸÷æ$‰µ¢kï©ê½{VR3#qFŠ’h&Ó‹$ş%™ôÊš‘f#‘”‰¢g†=Ö3Ó=ì­öµ €ÂÈ=óŞˆ8Çİõà'n^ P]Õ£‘Â@æEæÍˆğ8î~>ÿüóy/ÅCsÇÍ
+ğ¯ÛK‹uÑ­a+­´!RSÕã¦®RJšsŸzé»œË¤O1ÀÊ>ï‹ì s¾¿¹©bÌRÚÚzğúë¯Wqô‡ø~İöhºòHúøû†¤£¤í`df"f	5çÈ.dª†D\q0.È¨£ZLì}%ôĞS|-‘ËË¡Å6óuVRGO11¸æKpñ X°Í¨/3UÏÀ‹BgaÌ¢ ©c]W1bÑR‘4ëó¬Om×©øœ,<n vaRD4¯Å yÍ0›Í¦k ˜N§ÿîßıß©ï_zù¢W¿ªÁd€AızÈ Á¿ éX|	U]XZ€A³ehLU˜3…8Ì|cO%Bp0^™‘€É‘}P 3EwŒ’*h9}W“ÃWŸ3‘Ù_¾ /œ³ƒ)K ‚]g ‘y2G#bM9'‘äp¨ë:ğƒdÀÃ|ï	¶¬Rô[ µŒ‘1×dU±œ ½ğüK!Ô"ğ•ëa¸ü_âçVİÂ£ê±İ¿«lu¬4LÀ”DR2@3g"yéØóZŸlÃÌ¤âĞŠS,;bBßœó ôHan•ã%	 ĞÂ<Ã/ç[.‹$‘{Ãœsà ªˆC “‹Îß¼y»ëg£ºY˜©O©í²ˆ¦ôŠaå¡aP3P—@1gnaÄ|a$¦æX6©ÂÙ³gÏ»æº¶¿NÒ1ç¶Ç°ÁZxÕ‘\ªË¤Ì¯ñ˜à¹…'HEÑLÈ{ª
+ [\™û+†…_±àĞŒ‡¥EEÓ‘½É€KÇCáÁ §]Î•œçŒ<ç\ ˆHÕTDrJ+ËËÏ>sy<YºyıÆòxRU¡ë»^$Kîû¾¤„ª;¿!ÃıZ|ªi(dB1’–Ä<òBU7ßıŞ÷TM†Ö¦¿c–ˆø˜ååöÛbÒo †À –¾<"D`ß5!¨Ù\æSU“*™ÅqwÈ<ˆ€©Ğ(Ê>™ˆ¼­'‡™R(nÃ¶Œ†‚åğ£ ÂBH§·¶¶¦³G£k×ï€ØÅóç—Æ“½½½®ï%‹øÊRu¡íAóc¡ÚMdä€â£íš§Tâœˆ€ëëë/¾ğbÊ‡Zİß	çác: ª ³bÃP…Rü;N_\Ê äˆf…B‰HÌîÉ#¸¡ˆ(”üp ;G²€!€Sˆ‘‰†@‘‰ŒWzé@³àùógÖONL3¨X#T{òòÙåqµwv÷öú¾On.Ó¹ô†_ù”!RÔÅK]¸c^->ËŠ[!0üÚ•+ú°ôW2Ø#¿çY„¼s&0¿õ 0¤ê 0CY|D	•é8$Ôfh ªDˆWè±8°«yşïñÆÊ¡ûb!K$
+!¸ğ.3ûq·ÏÂ
+Ã¹ÕÍ‘ê¦	!r§××Ú¶kê*r fÅxĞéƒİ½ÃÙt–úYß¶’º,Y‹bë zV«á¼HD>9¸ë$"4-ı·Šˆ8-}íùçSNÃ7Á#{Œå‹%ˆğ¸´1øeÃyÄ3'~”`(‡,¾§‹96
+dæòY¨€ih«T(sÇ|¼gB×–CpFSÙ'†e\Æ0 +òÆDÉe?‰ „B$@.íï9/ ªh|jmmÖµLXUáÄ‰•Éx”ûb€íİÃ{Nf©ïrJªâ­¶ Îu·!-‚a'n5[›oóL]T¼o~ÑfÍÒ˜ë1.®ŒãòÊc–ê¿AÆÿ.†gİåĞüG` TËî÷Ñ§	 Øëd®Ez	Pr¿"ôæAò@ÍÒ 7€èúZ
+?‹´ 1£1Aà˜ca¨|„‘¹Áğ"9úÆÄ“Éx<©Ì²©ÆµËuÍ³)9w:›N»¶K9å,†
+¤@F ÅùN|\…t?Q¤
+ë0£)—
+.›¸¦B¨˜«ŠcXÌ¾Ä%.ZqÀâ@ü<GìËßdØq;‡Ñ)ÊàùóEì"]4§fÀœ0–ŒÁ¹=­`êHˆP#GBf¦%&80(Ä Ä†e,;0aB]ÅÑ8VÑ$ cŒÁ×nß¶’m:=Ê©$ €ÈÄFl¦>ĞÁÁôÒñE#!j¡Í§Ğ!Ì{>æ€ÏôX€Â¿‚Áş^.ißN7‡5öp%?æŸPy£!0”gKÊ@DÌ™˜€É"†À…t<†‘Sšœ‰J LÆ`D«è$1×DŠ®B-mÛN§]Ûö„s68B@S#_¦DDJŒÙRÑâUßÔ, èTlæ9yÄÌ`oo¿ëÚºioæÿç[ğ«X`=|Ìq\ÿ L¸ÿúÎ’Ø;‰ GMÌD1ÌÑ	9!pŒ!VLŞÀTÒ Ñ|€d¹ïz33‹1Rˆ ä,m;›ÍfÉ§”Pˆ€1:3Ñ9“Èˆ!ê±4’I‡ 0ƒáĞj¥°mŠ†d!    IDAT£ñ$Ä
+‡@øÿ“Áà!wPV¸÷¿Kã ¹<[˜	aş$—X[,J4oƒ)¢ „Ì!"f`!z;!ÄêàI†0BõGTAÅD„‘	-gëfı¬ëÌl<M[,¨XT1%<ÈñÒsˆÔ¼zÈ>c P‘HihëÂRÕDóñVmŸ|èÇbèùBÖÔ<uxø5„AÎc ½¾Î¿\pV‹PÈ±bÑá~ø%,©6òm¬·}ñ¼ùvşK`HœÎğ8 Ø\œ8p\‘­‰1ÄÈn²š*V9ËÀ´ìUÈØwlHmÊ9›$3Ã«ªªÆ£ñtÖ3©úÖQ‰¢1£ŠQà †Nw4& !äœE$êSŸú>åÄD  hX a}}İÌr<ö˜ÃàíÏïb˜«ÖÀüGE¾oş•9Ğ€HäœÆDÀ`dƒÏ D#ÆÉ¨,.d`*2¢Z\ C™kXCİê¾-»:DÏ`€£/Šcä&BŒĞÇ…O x3Jƒ «‰€*¨šQ°µõ“†IGP†”–-³ä,,DdlU)'/ÃæœsÎ*êê7föä“O_½úA1‹‚©Iaª}ó›ßr­LX y#K?çÂ`<,Ø÷ÃæR÷Å¬`èP.£ÒË‚pE…Wíø¹«¥AÎMÅ¾T[V]ÙäR 
+óà…È¸@è Åwäh˜;PÖxR¦Ù+ºUä:RÍĞpt_ Î³(Ùš	€âq¨´O9ë¬›4ƒœ•ç'‘8*ƒeÌvˆ€Á«jªêé¼™İºuËû—O­¯3Ó½{÷]w ×ÖOÙØ€!'?^aµÖ£{(ê/úÀEï°Ğ“æüb%‚AÄps^¦_ ’—p åJ/úñáÌhN’ÂùóSª¶~„È˜#ÑP¡)H™1YÀCâç¼ËñKdÀ‘]µ>gII§Óº®rf2…>õ)%ç9IÎD4›¦ÙÛ=¨›zŸ™ãj¼qı†ï–s–®ëf³™ª â‰'oİ¾­jˆWO¬üÎïüÖhÔÀçğHerÑ887:^i8,¸rG†»8”ƒÁ€JZHƒ#r«*—ÕáÜ·ù:<6ûÂoX¬Z™óÕØ<ËÄ1åjNÇ^r8u¯¼P·øS¯ä /Ô
+~ÅÆ¨U0 
+„„Í´MUN51@u çÜ÷}ÊÙ«b»»»uÕÜ½}ouuõààà[ßúÖG}äLˆªª‰x6›-//O&“O>ùDU‰¸ªBS×¿÷Û¿}îìYz\zçf.šmqmÀĞØãwa€İ±<µèxRÑ× ÃEÌáİÁˆH68.8¾Å
+‹E‰(`SÇbE¡ŠÕh<Y^^	!Ü½wo¾u#¯®*¿wîGpú4“Çğsü¼ı€ÀF!uj‡ ¢yÖªYI9u)w9k©9kgÀ­÷ö÷Ÿ|êÉ¾ï·w¶q}}ışıMUK}—%#bÛvÓéŒ‘D23ŸX]ùÆk¯?Rì#'ô¨KDDš'bs—¶è†J±Tfc¨ÀEìÊÂ¼ÙByŸ˜‘	ÉJŞÀä P¹ÕÅ¦ÅNDejÂ 1ÒhTªQäC|öÙg×OŸÙÛİ»}ë–K^ ³¢èoŒˆL\Wqi<®+f¦ÈæREù–}ÑjCmHŸBÅP$¢ä„æãºÊÏ#°ß>0PÕ£££½½=3ûùÏ>›ÍÔU€}×Wu•³äœ«*œ={öòåË_{ö™'NÌcö@FÂ…¤ƒØLÁ£Hqì…Å4tÜG4Ô¡€2 3$`æ'×˜ãÑar"WÑ(¸î0Q@ŒLÈF-00c`ä@%D¸2_Ä@NT'® ®q<“fÒTM]ÖN®Uö=w‰9VÈ¡¢Py#xUÅÕ¥Éê¤äúReÂ—¸Ä¹5±©"†*T!†V–—úœlíˆŠjçæœ³W«Ş%¢Ùl–údj;Û;ÎV3f>yr­ï»¥å¥ßüÁo®X™LÆN-½Òi«ÍmªXg™ªƒ¤`±ä3Hj‹Ü¾â!€ÇM3âÉ¸ªª°qæÔh²äıÃé‰•3}Ÿ¦m›r²”4+d3Om=‚yî®ÌHdD@LH¹bäŒ€ÄTærÅŠb­Mƒ£&Œ›¦ªšÓ§N×UT•ÃÃC¢‚o›êPbÇAÒ†9`jš8U5ÏGM~>ÙøâÃ½Sl`„q¹^Yjf]¿vreÚåv poïğğğèğàÀW’Šæ”»®ó>KÑ¢`fËË+_å•/ŒÇãº®«X¹ò3´<qò.¦ùÚòsb=Ä®ªcJZ…¥o|ó[ï¾û~Ûök§6¶·vRÊ1ú\û’“Á“O^8svme¹©ªĞ¦éİ{·fí¬Or4íT¡eDª«XE4k÷ÛÅ4'F

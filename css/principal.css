@@ -1,0 +1,110 @@
+@charset "utf-8";
+#ocultar{
+	display:none;
+}
+#btnResponder:hover{
+	cursor:pointer;
+}
+.textarea{
+	height:200px;
+	width:500px;
+}
+#txtmensaje{
+	height:200px;
+	width:500px;
+}
+.button{
+
+	width: 120px;
+	margin-left:30px;
+	background-color:#006;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	box-shadow: 2px 2px 5px #999;
+    font-weight:bold;
+
+
+}
+#btnñadidrForo{
+	width: 120px;
+	margin-left:30px;
+	background-color:#006;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	box-shadow: 2px 2px 5px #999;
+    font-weight:bold;
+/*	float:right;*/
+}
+.btnResponder{
+	width: 150px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:10px;
+	background-color:#006;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	box-shadow: 2px 2px 5px #999;
+    font-weight:bold;
+	/*float:right;*/
+}
+#cerrar{
+	width: 120px;
+	margin-left:30px;
+	background-color:#006;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	box-shadow: 2px 2px 5px #999;
+    font-weight:bold;
+}
+
+#cerrar:hover{
+	cursor:pointer;
+}
+#btnguardar:hover{
+	cursor:pointer;
+}
+body{
+	background-color:#CCC;
+}
+div{
+	background-color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding-bottom:10px;
+	padding-left:15px;
+	  border-width: 10px;
+  border-color:#000;
+}
+p{
+	font-weight:bold;
+	padding-top:10px;
+	margin-top:10px;
+	margin-left:30px;
+}
+span{
+	font-weight:normal;
+}
+#edicion{
+	display:none;
+}
+#editar:hover {
+	cursor:pointer;
+	background:#CCC;
+	color:#000;
+}
+/* CSS Document */
+#inicio{
+	width:40px;
+	height:40px;
+}
+#inicio:hover{
+	cursor:pointer;
+}
+#guardar{
+	height:40px;
+	width:40px;
+}
