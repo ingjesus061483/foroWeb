@@ -92,7 +92,7 @@ class DataAccess
 		$consulta="select id,Nombre from $tabla";
 		$this-> result=mysqli_query($this->con,$consulta) or die ($this-> mensaje(mysqli_error($this->con)));
 		$num =mysqli_num_rows($this-> result);
-		$arr;
+		$arr=null;
 		if($num!=0)
 		{
 			$i=0;
@@ -238,7 +238,7 @@ class DataAccess
 		$this->AbrirConexion();
 		$consulta="select * FROM viewperfiles";
 		$this->result=mysqli_query($this->con,$consulta) or die ($this-> mensaje(mysqli_error($this->con)));
-		$arr;
+		$arr=null;
 		$num =mysqli_num_rows($this-> result);
 		if($num!=0)
 		{
@@ -258,7 +258,7 @@ class DataAccess
 		$this->AbrirConexion();
 		$consulta="select * FROM Modulos";
 		$this->result=mysqli_query($this->con,$consulta) or die ($this-> mensaje(mysqli_error($this->con)));
-		$arr;
+		$arr=null;
 		$num =mysqli_num_rows($this-> result);
 		if($num!=0)
 		{
@@ -278,7 +278,7 @@ class DataAccess
 		$this->AbrirConexion ();
 		$consulta="select * FROM viewusuarios";
 		$this->result=mysqli_query($this->con,$consulta) or die ($this-> mensaje(mysqli_error($this->con)));
-		$arr;
+		$arr=null;
 		$num =mysqli_num_rows($this-> result);
 		if($num!=0)
 		{
