@@ -1,5 +1,5 @@
 <?php
 class Perfil
 {
-    public $id,$nmmbre,$descripcion,$estado,$Permisos;
+    public $id,$nombre,$descripcion,$Permisos;
 }

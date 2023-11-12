@@ -1,80 +1,91 @@
-usuarios=function(  nom , ape ,dir , tel , cur,email ,  usu , pwd, tipo){
-	 this.nom =nom; 
-	 this.ape =ape;
-	 this.dir=dir;
-	 this.tel=tel;
-	 this.cur=cur;
-	 this.email=email;
-	 this.usu =usu;
-	 this.pwd=pwd;
-	 this.tipo=tipo;
-	 this.validar=function(form){
-		 if ((usu==''||email=='')&&pwd==''){
-			 alert("");
-			 return;
-		 }
-		 form.submit()
-		 
-	 
-	 }
-}
-
- 		var idforo ;
-		var idtipoid;
-		var idusuario;
- 	   function respuesta(oForo,oTipoId,oUsuario){
-		  idforo =oForo;
-		  idtipoid=oTipoId;
-		  idusuario=oUsuario;
-		  $("#frmRespuesta").dialog("open");
-		}
-		function ver_respuesta(oForo,id,cantResp){
-			idforo=oForo;
-			vcontenedor='container'+id
-			btnocultar="ocultar"+id;
-			contenedor =document.getElementById(vcontenedor);
-			cant=cantResp;
-			if(cant==0)
-			{
-				$("#"+vcontenedor).fadeOut();
-								return;
-								
-			}
-			else{
-				$("#"+vcontenedor).fadeIn();
-			//	btnocultar.style.display="inline";
-				$("#"+btnocultar).fadeIn();
-			}
+usuarios=function(  nom , ape ,dir , tel , cur,email ,  usu , pwd, tipo)
+{
+	this.nom =nom; 
+	this.ape =ape;
+	this.dir=dir;
+	this.tel=tel;
+	this.cur=cur;
+	this.email=email;
+	this.usu =usu;
+	this.pwd=pwd;
+	this.tipo=tipo;
+	this.validar=function(form)
+	{		
+		if ((usu==''||email=='')&&pwd=='')
+		{
 			
-			ajax=nuevoAjax();
-			ajax.open("POST", "verRespuestas.php",true);
-			ajax.onreadystatechange=function() {
-				if (ajax.readyState==4) {
-					contenedor.innerHTML = ajax.responseText;
-				}
-			}
-			ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-			 	   ajax.send("idforo="+idforo);
-		
-		
-		}
+			alert("");			
+			return;		
+		}		
+		form.submit();
+	}
+}
+var idforo ;
+var idtipoid;
+var idusuario;
+function respuesta(oForo,oTipoId,oUsuario)
+{
+	idforo =oForo;	
+	idtipoid=oTipoId;	
+	idusuario=oUsuario;	
+	$("#frmRespuesta").dialog("open");
 
-	   function nuevoAjax(){
-		   var xmlhttp=false;
-		   try {
-			   xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-		   } catch (e) {
-			   try {
-				   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-			   } catch (E) {
-				   xmlhttp = false;
-				   }
-		  }
-		  if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
-			  xmlhttp = new XMLHttpRequest();
-		  }
-		  return xmlhttp;
-		  }
+}
+function ver_respuesta(oForo,id,cantResp)
+{	
+	idforo=oForo;	
+	vcontenedor='container'+id;	
+	btnocultar="ocultar"+id;	
+	contenedor =document.getElementById(vcontenedor);	
+	cant=cantResp;	
+	if(cant==0)	
+	{
+		$("#"+vcontenedor).fadeOut();						
+		return;	
+	}	
+	else	
+	{		
+		$("#"+vcontenedor).fadeIn();		
+		//	btnocultar.style.display="inline";		
+		$("#"+btnocultar).fadeIn();	
+	}
+	ajax=nuevoAjax();	
+	ajax.open("POST", "verRespuestas.php",true);	
+	ajax.onreadystatechange=function() 
+	{
+		if (ajax.readyState==4) 
+		{
+			contenedor.innerHTML = ajax.responseText;				
+		}	
+	}
+	ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");	
+	ajax.send("idforo="+idforo);
+
+}
+function nuevoAjax()
+{
+	var xmlhttp=false;	
+	try 
+	{		
+		xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");	
+	}
+	catch (e) 
+	{		
+		try 
+		{
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");		
+		}
+		catch (E)
+		{
+			xmlhttp = false;		
+		}	
+	}	
+	if (!xmlhttp && typeof XMLHttpRequest!='undefined') 
+	{		
+		xmlhttp = new XMLHttpRequest();	
+	}
+	return xmlhttp;
+}
 		  function nuevo(){
 			  var tipo=$("#tipo").val()
 			  if (tipo==0)

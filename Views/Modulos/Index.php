@@ -1,43 +1,49 @@
 <?php
 $titulo="Listado de  modulos";
+include("../../shared/head.php");
+
 $modulo="Modulos";
-session_start();
-if (!isset($_SESSION['usuario']))
+$ModulosController=new ModuloController();
+$rows=$ModulosController->index();
+if(isset( $_POST["eliminar"]))
 {
-  header('Location:../../login.php');
+   $ModulosController->delete($_POST["id"],$msg); 
 }
-$id=$_SESSION['usuario'];
-require_once("../../Model/Usuarios.php");
-require_once("../../Model/Perfil.php");
-require_once("../../Data/DataAccess.php");
-require_once("../../Data/Utilidades.php");
-require_once("../../Controllers/ModulosController.php");
-$ModulosController=new ModulosController();
-$table=$ModulosController->index();
-$body="
-<div style='margin:0 auto;' class='card'>
-    <div class='header'>
-    $titulo
+
+?>
+
+<div style='margin:0 auto;' class='card mb-4'>
+    <div class='card-header'>
+        <a  class='btn btn-primary' href='Crear.php'>Crear</a>
     </div>
-    <div class='body'>   
-    <div>
-        <a style='float :right;' class='button' href='Crear.php'>Crear</a>
-    </div>
-    <div>
-        <table id='customers'>
+    <div class='card-body'>   
+        <table class="table" id='customers'>
             <thead>
                 <tr>
-                <th >Id </th>
-                <th >Nombre</th>
-                <th >Descripcion</th>                                         
-                <th></th>                          
+                    <th >Id </th>
+                    <th >Nombre</th>
+                    <th >Descripcion</th>                                         
+                    <th></th>  
+                    <th></th>                          
                 </tr>
             </thead>       
             <tbody>
-                $table
+            <?php while($row = $rows->fetch()){ ?>
+            <tr>
+               <td ><?=$row->id?> </td>
+               <td><?=$row->nombre?></td>            
+               <td><?=$row->descripcion?></td>                                          
+               <td><a class="btn  btn-warning" href="<?=$url?>views/modulos/editar.php?id=<?=$row->id?>">Editar</a></td>    
+               <td>
+                  <form action="Index.php" method="post">
+                     <input type="hidden" name="id" value="<?=$row->id?>">
+                     <button type="submit" class="btn btn-danger" name="eliminar" >Eliminar</button>
+                  </form>
+               </td>
+            </tr>
+            <?php }?>      
             </tbody>
         </table>
     </div>
-</div>";
-require_once("../../shared/Plantilla.php");
-?>
+</div>
+<?php include("../../shared/foot.php");?>

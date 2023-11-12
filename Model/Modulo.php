@@ -1,5 +1,5 @@
 <?php
-class Modulos
+class Modulo
 {
     Public $id ,$nombre,$descripcion; 
 }

@@ -1,20 +1,18 @@
 <?php
-require_once("../../data/DataAccess.php");
-$metodo=$_POST["metodo"];
-$data=new DataAccess();
+require_once("../../Repositories/PermisoRepository.php");
+$request=(object)$_POST;
+$metodo=$request->metodo;
+$permisorepository=new PermisoRepository();
 $msg="";
 $success =false;
 switch($metodo)
 {
     case "agregarPermiso":
-    {
-        $idperfil=$_POST["idperfil"];
-        $modulo=$_POST["modulo"];
-        $value=$_POST["value"];        
-        if(! $data->buscarpermiso($idperfil,$modulo,$value))
+    {      
+        if(!$permisorepository->buscarpermiso($idperfil,$modulo,$value))
         {
             $success=true;
-            $data->insertarpermiso($idperfil,$modulo,$value);
+            $permisorepository->Store($request);
             $msg="El registro ha sido insertado correctamete";
         }
         else
@@ -25,12 +23,11 @@ switch($metodo)
     }
     case "EliminarPermiso":
     {
-        $id=$_POST["id"];
-        $data->EliminarPermiso($id);
+        $id=$request->id;
+        $permisorepository->delete($id);
         $msg="El permiso ha sido eliminado";
         $success =true;
         break;
     }
 }
 echo json_encode(array("success"=>$success,"mesage"=>$msg));
-?>

@@ -1,88 +1,74 @@
 <?php
-session_start();
 $titulo="Editar usuario";
-$modulo="Usuarios";
-require_once("../../Model/Usuarios.php");
-require_once("../../Model/Perfil.php");
-require_once("../../Data/DataAccess.php");
-require_once("../../Data/Utilidades.php");
-require_once("../../Controllers/UsuariosController.php");
-
-if (!isset($_SESSION["usuario"]))
-{
-  header('Location:../../login.php');
-}
-$UsuarioController=new UsuariosController();
-$usuario=new Usuarios();
-$combo="";
 $msg="";
+require_once("../../shared/head.php");
+
+$modulo="Usuarios";
+$UsuarioController=new UsuarioController();
+
 $id=0;
 if (isset($_GET["id"]))
-{
-        $id=$_GET['id'];
-        $UsuarioController->EditarGet($id,$usuario, $combo);
+{    
+    $id=$_GET['id'];       
 }
-if (isset($_SESSION['usuario']))
+if (isset($_POST["enviar"]))
 {
-    
-    if (isset($_POST["enviar"]))
-    {
-        
-        $id=$_POST["id"];
-        $identificacion=$_POST["identificacion"];
-        $prinombre=$_POST["prinombre"]; 
-        $segnombre=$_POST["segnombre"];
-        $priapellido=$_POST["priapellido"];
-        $segapellido=$_POST["segapellido"];            
-        $Direccion=$_POST["Direccion"];
-        $telefono=$_POST["telefono"];
-        $idperfil =$_POST["perfil"];
-        $msg =$UsuarioController->EditarPost ($id, $identificacion, $prinombre ,$segnombre,$priapellido,
-        $segapellido,$Direccion,$telefono,$idperfil,$combo );
-    }
+    $request=(object)$_POST;       
+    $id=$request->id; 
+    $msg =$UsuarioController->update ($id, $request,$rows );
+    header('Location:index.php');	
 }
-echo" <input type='hidden'  id='msg' value='$msg'/>";                
-if ($usuario !=NULL) 
-{
-    $body=" 
-    <div style='margin:0 auto;' class='card'>
-        <div class='header'>
-        $titulo
-        </div>
-        <div class='body'>   
-            <div>        
-                <form id ='frm' action='Editar.php' onsubmit ='return validacion();' method='post'> 
-                    <input type='hidden' name='id' id='id' value='$usuario->id'/>
-                    <label for='identificacion'>identificacion</label>
-                    <input placeholder='tu identificacion..' type='text' value='$usuario->identificacion'id='identificacion' name ='identificacion' />			
-                    <label for='prinombre'>primer nombre</label>
-                    <input type='text'placeholder='tu primer nombre..' value='$usuario->prinombre' id='prinombre' name ='prinombre' />			
-                    <label for='segnombre'>Segundo nombre</label>
-                    <input type='text' placeholder='tu segundo nombre..'value='$usuario->segnombre' id='segnombre' name ='segnombre' />
-                    <label for='priapellido'>primer apellido</label>
-                    <input type='text' id='priapellido'placeholder='tu apellido..' value='$usuario->priapellido' name ='priapellido' />		
-                    <label for='segapellido'>Segundo apellido</label>
-                    <input type='text' id='segapellido'placeholder='tu segundo apellido..'value='$usuario->segapellido'  name ='segapellido' />					
-                    <label for='Direccion'>Direccion</label>
-                    <input type='text' placeholder='tu Direccion..' value='$usuario->Direccion' id='Direccion' name ='Direccion' />				
-                    <label for='telefono'>Telefono</label>
-                    <input type='text' placeholder='tu telefono..' value='$usuario->telefono' id='telefono' name ='telefono' />				
-                    <label for='perfil'>perfil</label>
-                    <select id='perfil' value='$usuario->idperfil' name ='perfil'>
-                        $combo                
-                    </select>
-                    <div>
-                        <button class='button' id='btnenviar' name='enviar'type='submit' >Enviar</button>		
-                        <a class='button' href ='index.php' >Listado de usuarios</a>
-                    </div>
-                </form>	
-            </div>	             
-        </div>
-    </div>
-    ";
-}
-require_once("../../shared/Plantilla.php");
+$usuario= $UsuarioController->Edit($id, $rows);
 ?>
+<div style='margin:0 auto;' class='card'>
+   <form id ='frm' action='Editar.php' onsubmit ='return validacion();' method='post'>    
+        <input type='hidden' name='id' id='id' value="<?=$usuario->id?>"/>
+        <div class="mb-3">
+            <label for='identificacion' class="form-label">Identificacion</label>			
+			<input placeholder='tu identificacion..' value="<?=$usuario!=null?$usuario->identificacion:''?>" class="form-control" type='text' id='identificacion' name ='identificacion' />			
+		</div>
+		<div class="mb-3">
+			<label for='prinombre' class="form-label"> Nombre</label>								
+			<input type='text'placeholder='tu primer nombre..'value="<?=$usuario!=null?$usuario->nombre:''?>" class="form-control" id='nombre' name ='nombre' />						
+		</div>        
+        <div class="mb-3">
+			<label for='priapellido' class="form-label">Apellido</label>					
+			<input type='text' class="form-control" id='apellido'placeholder='tu apellido..'value="<?=$usuario!=null?$usuario->apellido:''?>" name ='apellido' />			
+		</div>        
+        <div class="mb-3">
+			<label for='Direccion' class="form-label">Direccion</label>			
+			<input type='text' class="form-control" value="<?=$usuario!=null?$usuario->direccion:''?>" placeholder='tu direccion..' id='Direccion' name ='direccion' />							
+		</div>        
+        <div class="mb-3">
+			<label for='telefono' class="form-label">Telefono</label>								
+			<input type='text' class="form-control" placeholder='tu telefono..' id='telefono' value="<?=$usuario!=null? $usuario->telefono:''?>" name ='telefono' />							
+		</div>        
+        <div class="mb-3">
+			<label for='Email' class="form-label" >Email</label>			
+			<input type='text' placeholder='tu email..' class="form-control" value="<?=$usuario!=null? $usuario->email:''?>" id='Email' name ='email' />							
+		</div>
+		<div class="mb-3">
+			<label for='Usuario' class="form-label">Usuario</label>								
+			<input type='text' placeholder='tu usuario..' class="form-control" id='usuario' value="<?=$usuario!=null? $usuario->usuario:''?>" name ='usuario' />							
+		</div>
+		<div class="mb-3">
+			<label for='Contraseña' class="form-label">Contraseña</label>			
+			<input type='password' value="<?=$usuario!=null? $usuario->pwd:''?>" placeholder='tu contraseña..'class="form-control"  id='pwd' name ='password' />							
+		</div>
+		<div class="mb-3">
+			<label for='perfil' class="form-label" >Perfil</label>			
+			<select id='perfil'class="form-control" name ='perfil'>				
+				<option value="" >seleccione un perfil </option> 	
+				<?php while($row = $rows->fetch()){ ?>	
+				<option value="<?=$row->id?>"<?=$usuario!=null?($usuario->Perfil->id==$row->id?'selected':''):''?>><?=$row->nombre?></option>			
+		    	<?php }?>
+			</select>			        
+        </div>        
+        <br>        
+        <a class='btn btn-primary' href ='index.php' >Regresar</a>		
+		<button class='btn btn-success' id='btnenviar' name='enviar' type='submit'>Guardar</button>					    
+    </form>
+</div>
 <script type="text/javascript">
     msg=document.getElementById('msg');
     id=document.getElementById('id');
@@ -95,10 +81,8 @@ require_once("../../shared/Plantilla.php");
     {
                 frm=document.getElementById('frm');
                 identificacion=document.getElementById('identificacion');
-                prinombre=document.getElementById('prinombre');
-                segnombre=document.getElementById('segnombre');
-                priapellido=document.getElementById('priapellido');
-                segapellido=document.getElementById('segapellido');
+                prinombre=document.getElementById('nombre');               
+                priapellido=document.getElementById('apellido');                
                 direccion=document.getElementById('Direccion');
                 telefono=document.getElementById('telefono');
                 perfil=document.getElementById('perfil');
@@ -128,7 +112,7 @@ require_once("../../shared/Plantilla.php");
                     alertify.error("Campo invalido");
                     return false;
                 }
-                if(perfil.value==-1)
+                if(perfil.value=="")
                 {
                     alertify.error("Campo invalido");
                     return false;
@@ -136,5 +120,6 @@ require_once("../../shared/Plantilla.php");
                 frm.submit();
     }
  </script>
-
-	
+<?php
+include("../../shared/foot.php");
+?>
