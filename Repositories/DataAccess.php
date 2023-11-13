@@ -1,8 +1,9 @@
 <?php
-
 abstract class DataAccess
 {
-	protected PDO $con ;
+	protected PDO $con;
+	protected $dsn;
+	protected $consulta;
 	public abstract function GetAll();
 	public abstract function Find($id);
 	public abstract function Store($request);
@@ -12,8 +13,8 @@ abstract class DataAccess
 	{
 		try 
 		{
-			$dsn = "mysql:host=localhost;dbname=test";			
-			$this->con = new PDO($dsn,'jmora', '72285908jm');			
+			$this->dsn = "mysql:host=localhost;dbname=test";			
+			$this->con = new PDO($this->dsn,'jmora', '72285908jm');			
 			$this->con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);		
 		} 
 		catch (PDOException $e)
@@ -21,24 +22,26 @@ abstract class DataAccess
 			die( $e->getMessage());
 		}	
 	}
-	public function llenarCombo($tabla)
+	protected function EjecutarConsulta($consulta,$params=null)
 	{
 		try
 		{
-			$this->AbrirConexion();            
-			$consulta="SELECT id,nombre from ".$tabla;
-			$stmt = $this->con->prepare($consulta);
-			// Ejecutamos
-			$stmt->execute();
-			// Ahora vamos a indicar el fetch mode cuando llamamos a fetch:			
-			$stmt->setFetchMode(PDO::FETCH_OBJ);
+			$stmt=$this->con->prepare($consulta);
+			if($params!=null)
+			{
+				$stmt->execute($params);		 
+			}
+			else
+			{
+				$stmt->execute();
+			}
 			return $stmt;
 		}
-		catch(Exception $ex)
+		catch(PDOException $e)
 		{
-			die($ex->getMessage());
+			die( $e->getMessage());
 		}	
-	}
+	} 	
 	public function codificar_imagen($archivo)
 	{
 		$imagenEscapes="";

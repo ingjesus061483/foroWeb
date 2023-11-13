@@ -4,10 +4,12 @@ class PerfilController
 {
     private PerfilRepository $perfilRepository; 
     private PermisoRepository $PermisoRepository;
+    private ModuloRepository $ModuloRepository;
     public function __construct()
     {
         $this->perfilRepository=new perfilRepository();
         $this->PermisoRepository=new PermisoRepository();   
+        $this->ModuloRepository=new ModuloRepository();
     }	
     private function Getperfil($result)
     {
@@ -30,7 +32,7 @@ class PerfilController
     {
         $resultperfil=$this->perfilRepository->Find($id);
         $perfil=$this->Getperfil($resultperfil);
-        $resultmodulos=$this->perfilRepository->llenarCombo("modulos");
+        $resultmodulos=$this->ModuloRepository->GetAll();
         $combo=$resultmodulos;
         return $perfil;
     }

@@ -14,12 +14,11 @@ class PerfilRepository extends DataAccess{
     {
         try
         {
-           $stmt = $this->con->prepare("SELECT * FROM perfiles");           
-           // Ejecutamos           
-           $stmt->execute();                      
+           $this->consulta = "SELECT * FROM perfiles";           
+           $result=$this->EjecutarConsulta($this->consulta);
            // Ahora vamos a indicar el fetch mode cuando llamamos a fetch:           
-           $stmt->setFetchMode(PDO::FETCH_OBJ);           
-           return $stmt;        
+           $result->setFetchMode(PDO::FETCH_OBJ);           
+           return $result->fetchAll();        
         }
         catch(Exception $ex)
         {
@@ -30,13 +29,13 @@ class PerfilRepository extends DataAccess{
     {
         try
         {            
-            $stmt = $this->con->prepare("SELECT * FROM perfiles where id=:id");
-            $stmt->bindParam(":id",$id);
+            $this->consulta ="SELECT * FROM perfiles where id=:id";
+            $params=[":id"=>$id];
             // Ejecutamos
-            $stmt->execute();
-            // Ahora vamos a indicar el fetch mode cuando llamamos a fetch:
-            $stmt->setFetchMode(PDO::FETCH_OBJ);
-            return $stmt;        
+            $result=$this->EjecutarConsulta($this->consulta,$params);
+                        // Ahora vamos a indicar el fetch mode cuando llamamos a fetch:
+            $result->setFetchMode(PDO::FETCH_OBJ);
+            return $result;       
         }
         catch(Exception $ex)
         {
@@ -47,15 +46,14 @@ class PerfilRepository extends DataAccess{
     {
         try
         {         
-            $stmt = $this->con->prepare("INSERT INTO perfiles (nombre, descripcion) VALUES
-                                        (:nombre, :descripcion)");
+            $this->consulta ="INSERT INTO perfiles (nombre, descripcion) VALUES
+                                        (:nombre, :descripcion)";
             // Bind
             $nombre = $request->nombre;
             $descripcion = $request->descripcion;
-            $stmt->bindParam(':nombre', $nombre);
-            $stmt->bindParam(':descripcion', $descripcion);            
+            $params=[':nombre'=> $nombre,'descripcion'=> $descripcion];            
             // Excecute
-            $stmt->execute();
+            $this->EjecutarConsulta($this->consulta,$params);
         }
         catch(Exception $ex)
         {
@@ -67,15 +65,16 @@ class PerfilRepository extends DataAccess{
         try
         {
          
-            $stmt = $this->con->prepare("UPDATE perfiles SET nombre=:nombre, 
-                                                            descripcion=:descripcion 
-                                                            WHERE id=:id");                       
+            $this->consulta ="UPDATE perfiles SET nombre=:nombre, 
+                              descripcion=:descripcion WHERE id=:id";                       
             // Bind            
-            $stmt->bindParam(":id",$id);
-            $stmt->bindParam(':nombre', $request->nombre);
-            $stmt->bindParam(':descripcion', $request->descripcion);            
+            $params=[
+                    ":id"=>$id,
+                     ':nombre'=> $request->nombre,
+                     ':descripcion'=> $request->descripcion
+                    ];            
             // Excecute
-            $stmt->execute();
+            $this->EjecutarConsulta($this->consulta,$params);
         }
         catch(Exception $ex)
         {
@@ -86,9 +85,9 @@ class PerfilRepository extends DataAccess{
     {
         try
         {         
-            $stmt=$this->con->prepare("DELETE FROM perfiles where id=:id");
-            $stmt->bindParam(":id",$id);
-            $stmt->execute();       
+            $this->consulta="DELETE FROM perfiles where id=:id";
+            $params=[":id"=>$id];
+            $this->EjecutarConsulta($this->consulta,$params);       
         }
         catch(Exception $ex)
         {

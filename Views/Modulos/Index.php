@@ -28,7 +28,7 @@ if(isset( $_POST["eliminar"]))
                 </tr>
             </thead>       
             <tbody>
-            <?php while($row = $rows->fetch()){ ?>
+            <?php foreach($rows as $row){ ?>
             <tr>
                <td ><?=$row->id?> </td>
                <td><?=$row->nombre?></td>            

@@ -49,7 +49,7 @@ if (isset($_POST["enviar"]))
 			<label for='perfil' class="form-label" >Perfil</label>			
 			<select id='perfil'class="form-control" name ='perfil'>				
 				<option value="" >seleccione un perfil </option> 				
-				<?php while($row = $rows->fetch()){ ?>					
+				<?php foreach($rows as $row){ ?>					
 				<option value="<?=$row->id?>"><?=$row->nombre?></option>			
 				<?php }?>
 			</select>			

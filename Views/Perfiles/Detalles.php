@@ -13,7 +13,6 @@ if (isset($_GET["id"]))
 $rows=null;
 $perfil=$PerfilesController->detalleGet($id,$rows);
 $permisos=$perfil->Permisos;
-
 ?>
 <div style='margin:0 auto;' class='card mb-4'>
     <div class='card-body'>         
@@ -41,7 +40,7 @@ $permisos=$perfil->Permisos;
                 </tr>
             </thead> 
             <tbody>           
-            <?php while($row =$permisos->fetch()){?>                
+            <?php foreach($permisos as $row ){?>                
                 <tr>
                     <td><?=$row->id?> </td>
                     <td><?=$row->modulo?> </td>
@@ -59,13 +58,13 @@ $permisos=$perfil->Permisos;
 <div id ="ModalPermiso" >
     <input type='hidden'  id='idperfil' value='<?=$id?>'/>
     <label for="modulo"> modulo</label>
-    <select class="form-select" id="modulo"name="modulo">
-        <?php while($row=$rows->fetch()){?>
+    <select class="form-control" id="modulo"name="modulo">
+        <?php foreach($rows as $row){?>
             <option value="<?=$row->id?>"><?=$row->nombre?></option>
         <?php }?>
     </select>
     <label for="txtValue"> valor</label>
-    <select id="value" class="form-select"name="value">
+    <select id="value" class="form-control"name="value">
         <option value="Create">Crear</option>
         <option value="Edit">Editar</option>
         <option value="Delete">Eliminar</option>

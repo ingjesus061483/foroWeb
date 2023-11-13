@@ -1,53 +1,46 @@
 <?php
-//require("../vista/imagenes.php");
 require_once("DataAccess.php");
-//require_once("../Model/Usuario.php");
 class UsuarioRepository extends DataAccess
-{
-	 private PerfilRepository $perfilRepository;
+{	
 	function __construct()
 	{
-		$this->AbrirConexion();
-		$this->perfilRepository=new PerfilRepository();
-		
-		
+		$this->AbrirConexion();	
 	}
 	function GetAll()
 	{
 		try
 		{
-			$result=$this->con->prepare( "SELECT  usuarios.id,usuarios.identificacion,concat( usuarios.nombre,' ',
-										usuarios.apellido) NombreCompleto,usuarios.direccion,usuarios.telefono,usuarios.email,
-										usuarios.usuario,usuarios.perfil_id, perfiles.nombre as perfil
-									 	from usuarios join perfiles on usuarios.perfil_id=perfiles.id");		
-				   
-			$result->execute();			
+			$this->consulta="SELECT  usuarios.id,usuarios.identificacion,concat( usuarios.nombre,' ',
+							usuarios.apellido) NombreCompleto,usuarios.direccion,usuarios.telefono,usuarios.email,
+							usuarios.usuario,usuarios.perfil_id, perfiles.nombre as perfil
+			 				from usuarios join perfiles on usuarios.perfil_id=perfiles.id";
+			$result=$this->EjecutarConsulta( $this->consulta);		
 			$result->setFetchMode(PDO::FETCH_OBJ);			
-			return $result;			
+			return $result->fetchAll();			
 		}
 		catch(Exception $ex){
 			die($ex->getMessage());
-
 		}	
 	}
 	function Store($request)
 	{
 		try
 		{	
-			$result=$this->con->prepare("INSERT into usuarios(identificacion,nombre,apellido,direccion,
-										telefono,email,usuario,password,perfil_id)values(:identificacion,
-										:nombre,:apellido,:direccion,:telefono,:email,:usuario,:password,
-										:perfil)");
-			$result->bindParam(":identificacion",$request->identificacion);
-			$result->bindParam(":nombre",$request->nombre);
-			$result->bindParam(":apellido",$request->apellido);
-			$result->bindParam(":direccion",$request->direccion);
-			$result->bindParam(":telefono",$request->telefono);
-			$result->bindParam(":email",$request->email);
-			$result->bindParam(":usuario",$request->usuario);
-			$result->bindParam(":password",md5( $request->password));
-			$result->bindParam(":perfil",$request->perfil);
-			$result->execute();					
+			$this->consulta="INSERT into usuarios(identificacion,nombre,apellido,direccion,
+							telefono,email,usuario,password,perfil_id)values(:identificacion,
+							:nombre,:apellido,:direccion,:telefono,:email,:usuario,:password,
+							:perfil)";
+			$params=[
+				":identificacion"=>$request->identificacion,
+				":nombre"=>$request->nombre,
+				":apellido"=>$request->apellido,
+				":direccion"=>$request->direccion,
+				":telefono"=>$request->telefono,
+				":email"=>$request->email,
+				":usuario"=>$request->usuario,":password"=>md5( $request->password),				
+				":perfil"=>$request->perfil
+			];
+			$this->EjecutarConsulta($this->consulta,$params);
      	}
 		catch(Exception $ex){
 			die($ex->getMessage());
@@ -57,12 +50,11 @@ class UsuarioRepository extends DataAccess
 	{
 		try
 		{
-			$result= $this->con->prepare("SELECT id,identificacion,nombre,apellido,direccion,
-								 	      telefono,email,usuario,perfil_id
-									      from usuarios where id=:id");					
-							
-			$result->bindParam(":id",$id);
-			$result->execute();							
+			$this->consulta="SELECT id,identificacion,nombre,apellido,direccion,
+							 telefono,email,usuario,perfil_id from usuarios where 
+							 id=:id";										
+			$params=[":id"=>$id];
+			$result=$this->EjecutarConsulta($this->consulta,$params);							
 			$result->setFetchMode(PDO::FETCH_OBJ);
 			return $result;
 		}
@@ -74,16 +66,17 @@ class UsuarioRepository extends DataAccess
 	{
 		try
 		{
-			$result=$this->con->prepare("UPDATE usuarios set nombre =:nombre, apellido=:apellido, direccion=:direccion,
-										telefono=:telefono,perfil_id=:perfil where id=:id");
-										
-			$result->bindParam(":nombre",$request->nombre);
-			$result->bindParam(":apellido",$request->apellido);
-			$result->bindParam(":direccion",$request->direccion);
-			$result->bindParam(":telefono",$request->telefono);			
-			$result->bindParam(":perfil",$request->perfil);
-			$result->bindParam(":id",$id);
-			$result->execute();
+			$this->consulta="UPDATE usuarios set nombre =:nombre, apellido=:apellido, direccion=:direccion,
+										telefono=:telefono,perfil_id=:perfil where id=:id";
+			$params=[						
+				":nombre"=>$request->nombre,
+				":apellido"=>$request->apellido,
+				":direccion"=>$request->direccion,
+				":telefono"=>$request->telefono,
+				":perfil"=>$request->perfil,
+				":id"=>$request->id
+			];
+			$this->EjecutarConsulta($this->consulta,$params);										
 		}
 		catch(Exception $ex)
 		{
@@ -95,9 +88,9 @@ class UsuarioRepository extends DataAccess
 	{
 		try
 		{
-			$result  = $this->con->prepare("DELETE from usuarios where id=:id");		
-			$result->bindParam(":id",$id);
-			$result->execute();	
+			$this->consulta="DELETE from usuarios where id=:id";		
+			$params=[":id"=>$id];
+			$this->EjecutarConsulta($this->consulta,$params);										
 		}
 		catch(Exception $ex)
 		{
@@ -108,10 +101,12 @@ class UsuarioRepository extends DataAccess
 	{
 		try
 		{
-			$result=$this->con->prepare("UPDATE usuarios set password =:password where id=:id");			
-			$result->bindParam(":password",md5($request->password));
-			$result->bindParam(":id",$id);
-			$result->execute();
+			$this->consulta="UPDATE usuarios set password =:password where id=:id";			
+			$params=[
+				":password"=>md5($request->password),				
+				":id"=>$id
+			];
+			$this->EjecutarConsulta($this->consulta,$params);
 		}
 		catch(Exception $ex)
 		{
@@ -124,20 +119,21 @@ class UsuarioRepository extends DataAccess
 		try
 		{
 			$pwd=md5($request->password);
-			$result= $this->con->prepare("SELECT id,identificacion,nombre,apellido,direccion,
+			$this->consulta="SELECT id,identificacion,nombre,apellido,direccion,
 								 	      telefono,email,usuario,perfil_id
-									      from usuarios where email=:email and password=:password");												
-			$result->bindParam(":email",$request->usuario);
-			$result->bindParam(":password",$pwd);
-			$result->execute();				
+									      from usuarios where email=:email and password=:password";												
+			$params=[
+				":email"=>$request->usuario,
+				":password"=>$pwd
+			];
+			$result=$this->EjecutarConsulta($this->consulta,$params);				
 			$result->setFetchMode(PDO::FETCH_OBJ);
 			return $result;
 		}
-		catch(Exception $ex){
+		catch(Exception $ex)
+		{
 			die($ex->getMessage());
 		}		
 	}
-	
-	
 }
 ?> 

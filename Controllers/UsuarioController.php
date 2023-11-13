@@ -10,7 +10,8 @@ class UsuarioController
         $this->usuarioRepository=new UsuarioRepository();
         $this->perfilRepository=new PerfilRepository();;
     }	
-    private function GetUser($row) {
+    private function GetUser($row) 
+    {
         $usuario=null;     
         while ($fila=$row->fetch())
         {
@@ -53,14 +54,14 @@ class UsuarioController
     }
     public function Edit($id, &$combo)
     {    
-        $combo= $this->usuarioRepository->llenarCombo("perfiles");        
+        $combo= $this->perfilRepository->GetAll();        
         $row=$this->usuarioRepository->find($id);  
         $usuario=$this-> GetUser($row);   
         return $usuario;
     }
     public function update($id,$request,&$combo)
     {
-        $combo= $this->usuarioRepository->llenarCombo("perfiles");     
+        $combo= $combo= $this->perfilRepository->GetAll();
         $row=$this->usuarioRepository->find($id);  
         $usuario=$this-> GetUser($row);                   
         $msg="";
@@ -78,7 +79,7 @@ class UsuarioController
     }
     public function Create(&$combo)
     {    
-        $combo=$this->usuarioRepository->llenarCombo("perfiles");               
+        $combo=$this->perfilRepository->GetAll();
     }
     public function store($request)
 	{  

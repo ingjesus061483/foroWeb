@@ -1,22 +1,19 @@
 <?php
 require_once("DataAccess.php");
-require_once("../Model/Foro.php");
 class ForoRepository extends DataAccess
 {
-	private Foro $foro;
 	public function __construct()
     {
 		$this-> AbrirConexion ();
-	}	
-	
+	}		
     public function GetAll()
 	{	
 		try
-		{			
-			$result=$this->con->prepare("SELECT * FROM foros");		
-			$result->execute();
+		{					
+			$this->consulta="SELECT * FROM foros";
+			$result=$this->EjecutarConsulta($this->consulta);			
 			$result->setFetchMode(PDO::FETCH_OBJ);
-			return $result;		
+			return $result->fetchAll();		
 		}
 		catch(Exception $ex)
 		{
@@ -27,13 +24,14 @@ class ForoRepository extends DataAccess
 	{
 		try
 		{			
-			$result=$this->con->prepare("INSERT INTO foros(titulo, mensaje,fecha,usuario_id) values(:titulo,:mensaje,
-										:fecha,:usuario)");	
-			$result->bindParam(":titulo",$request->titulo);
-			$result->bindParam(":mensaje",$request->mensaje);
-			$result->bindParam(":fecha",$request->fecha);
-			$result->bindParam(":usuario",$request->usuario_id);													
-			$result->execute();
+			$this-> consulta="INSERT INTO foros(titulo, mensaje,fecha,usuario_id) values(:titulo,:mensaje,
+			:fecha,:usuario)";	
+			$params=[
+				":mensaje"=>$request->mensaje,
+				":fecha"=>$request->fecha,
+				":usuario"=>$request->usuario_id
+			];
+			$result=$this->EjecutarConsulta($this->consulta,$params);
 		}
 		catch(Exception $ex)
 		{
@@ -44,9 +42,11 @@ class ForoRepository extends DataAccess
 	{
 		try
 		{			
-			$result=$this->con->prepare("SELECT * FROM foros where id=:id");		
-			$result->bindParam(":id",$id);
-			$result->execute();
+			$this->consulta="SELECT * FROM foros where id=:id";
+			$params=[
+				":id"=>$id
+			];
+			$result=$this->EjecutarConsulta($this->consulta,$params);		
 			$result->setFetchMode(PDO::FETCH_OBJ);
 			return $result;		
 		}
@@ -59,14 +59,16 @@ class ForoRepository extends DataAccess
 	{
 		try
 		{			
-			$result=$this->con->prepare("UPDATE foros Set titulo=:titulo, mensaje=:mensaje,
-									    fecha=:fecha,usuario_id =:usuario where id=:id");	
-			$result->bindParam(":titulo",$request->titulo);
-			$result->bindParam(":mensaje",$request->mensaje);
-			$result->bindParam(":fecha",$request->fecha);
-			$result->bindParam(":usuario",$request->usuario_id);										
-			$result->bindParam(":id",$id);
-			$result->execute();
+			$params=[
+				":titulo"=>$request->titulo,				
+				":mensaje"=>$request->mensaje,
+				":fecha"=>$request->fecha,
+				":usuario"=>$request->usuario_id,														
+				":id"=>$id
+			];
+			$this->consulta="UPDATE foros Set titulo=:titulo, mensaje=:mensaje,
+							 fecha=:fecha,usuario_id =:usuario where id=:id";	
+			$result=$this->EjecutarConsulta($this->consulta,$params);					
 		}
 		catch(Exception $ex)
 		{
@@ -77,9 +79,11 @@ class ForoRepository extends DataAccess
 	{
 		try
 		{			
-			$result=$this->con->prepare("DELETE FROM foros WHERE id=:id");		
-			$result->bindParam(":id",$id);
-			$result->execute();			
+			$params=[
+				":id"=>$id
+			];
+			$this->consulta="DELETE FROM foros WHERE id=:id";
+			$result=$this->EjecutarConsulta($this->consulta,$params);				
 		}
 		catch(Exception $ex)
 		{

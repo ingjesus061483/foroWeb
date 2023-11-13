@@ -2,10 +2,8 @@
 $titulo="Editar usuario";
 $msg="";
 require_once("../../shared/head.php");
-
 $modulo="Usuarios";
 $UsuarioController=new UsuarioController();
-
 $id=0;
 if (isset($_GET["id"]))
 {    
@@ -59,7 +57,7 @@ $usuario= $UsuarioController->Edit($id, $rows);
 			<label for='perfil' class="form-label" >Perfil</label>			
 			<select id='perfil'class="form-control" name ='perfil'>				
 				<option value="" >seleccione un perfil </option> 	
-				<?php while($row = $rows->fetch()){ ?>	
+				<?php foreach($rows as $row){ ?>	
 				<option value="<?=$row->id?>"<?=$usuario!=null?($usuario->Perfil->id==$row->id?'selected':''):''?>><?=$row->nombre?></option>			
 		    	<?php }?>
 			</select>			        

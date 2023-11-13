@@ -10,12 +10,12 @@ class ModuloRepository extends DataAccess
     {
         try
         {
-           $stmt = $this->con->prepare("SELECT * FROM modulos");
+           $this->consulta ="SELECT * FROM modulos";
             // Ejecutamos
-            $stmt->execute();
+            $result=$this->EjecutarConsulta($this->consulta);
             // Ahora vamos a indicar el fetch mode cuando llamamos a fetch:
-             $stmt->setFetchMode(PDO::FETCH_OBJ);
-            return $stmt;        
+             $result->setFetchMode(PDO::FETCH_OBJ);
+            return $result->fetchAll();        
         }
         catch(Exception $ex)
         {
@@ -27,13 +27,13 @@ class ModuloRepository extends DataAccess
     {
         try
         {            
-            $stmt = $this->con->prepare("SELECT * FROM modulos where id=:id");
-            $stmt->bindParam(":id",$id);
+            $this->consulta="SELECT * FROM modulos where id=:id";
+            $params=[":id"=>$id];
             // Ejecutamos
-            $stmt->execute();
+            $result=$this->EjecutarConsulta($this->consulta,$params);               
             // Ahora vamos a indicar el fetch mode cuando llamamos a fetch:
-             $stmt->setFetchMode(PDO::FETCH_OBJ);
-            return $stmt;        
+             $result->setFetchMode(PDO::FETCH_OBJ);
+            return $result;        
         }
         catch(Exception $ex)
         {
@@ -44,15 +44,14 @@ class ModuloRepository extends DataAccess
     {
         try
         {         
-            $stmt = $this->con->prepare("INSERT INTO modulos (nombre, descripcion) VALUES
-                                        (:nombre, :descripcion)");
+            $this->consulta = "INSERT INTO modulos (nombre, descripcion) VALUES
+                                        (:nombre, :descripcion)";
             // Bind
             $nombre = $request->nombre;
             $descripcion = $request->descripcion;
-            $stmt->bindParam(':nombre', $nombre);
-            $stmt->bindParam(':descripcion', $descripcion);            
+            $params=[':nombre'=> $nombre,':descripcion'=> $descripcion];            
             // Excecute
-            $stmt->execute();
+            $this->EjecutarConsulta($this->consulta,$params);
         }
         catch(Exception $ex)
         {
@@ -62,16 +61,15 @@ class ModuloRepository extends DataAccess
     public function Update($id, $request)
     {
         try
-        {        
-            $stmt = $this->con->prepare("UPDATE modulos SET nombre=:nombre, 
-                                                            descripcion=:descripcion 
-                                                            WHERE id=:id");
+        {            
+            $this->consulta ="UPDATE modulos SET nombre=:nombre,descripcion=:descripcion 
+                          WHERE id=:id";
             // Bind
-            $stmt->bindParam(":id",$request->id);
-            $stmt->bindParam(':nombre', $request->nombre);
-            $stmt->bindParam(':descripcion',$request->descripcion);            
+            $params=[":id"=>$request->id,
+                     ":nombre"=> $request->nombre,
+                     ":descripcion"=>$request->descripcion];            
             // Excecute
-            $stmt->execute();
+            $this->EjecutarConsulta($this->consulta,$params);
         }
         catch(Exception $ex)
         {
@@ -82,9 +80,9 @@ class ModuloRepository extends DataAccess
     {
         try
         {         
-            $stmt=$this->con->prepare("DELETE FROM modulos where id=:id");
-            $stmt->bindParam(":id",$id);
-            $stmt->execute();       
+            $this->consulta="DELETE FROM modulos where id=:id";
+            $params=[":id"=>$id];
+            $this->EjecutarConsulta($this->consulta,$params);                       
         }
         catch(Exception $ex)
         {

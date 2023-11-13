@@ -9,18 +9,15 @@ class PermisoRepository extends DataAccess
     public function buscarpermiso($perfil_id,$modulo_id,$value){
         try{
             $encontrado=false;
-            $stmt=$this->con->prepare("SELECT * FROM permisos WHERE 
-                                   perfil_id=:perfil AND modulo_id=:modulo AND valor =:valor");
-            $stmt->bindParam(':perfil',$perfil_id);
-            $stmt->bindParam(':modulo',$modulo_id);
-            $stmt->bindParam(':valor',$value);
-            $stmt->execute();                              
-            $stmt->setFetchMode(PDO::FETCH_OBJ);           
-            while($row=$stmt->fetch()){
+            $this->consulta="SELECT * FROM permisos WHERE perfil_id=:perfil 
+                             AND modulo_id=:modulo AND valor =:valor";
+            $params=[':perfil'=>$perfil_id,':modulo'=>$modulo_id,':valor'=>$value];
+            $result=$this->EjecutarConsulta($this->consulta,$params);                              
+            $result->setFetchMode(PDO::FETCH_OBJ);           
+            if($row=$result->fetch()){
                 $encontrado=true;
             }
             return $encontrado;
-
         }
         catch(Exception $ex)
         {
@@ -31,14 +28,13 @@ class PermisoRepository extends DataAccess
     public function getPermisosByPerfil($perfil_id) 
     {
         try{
-            $stmt = $this->con->prepare("SELECT permisos.id,modulos.nombre modulo,permisos.valor ,
-                                         permisos.perfil_id,modulos.id modulo_id FROM permisos 
-                                         JOIN modulos ON  modulos.id =permisos.modulo_id WHERE
-                                         perfil_id=:perfil");  
-            $stmt->bindParam(":perfil",$perfil_id);                            
-            $stmt->execute();                              
-            $stmt->setFetchMode(PDO::FETCH_OBJ);           
-            return $stmt;        
+            $this->consulta = "SELECT permisos.id,modulos.nombre modulo,permisos.valor ,
+                               permisos.perfil_id,modulos.id modulo_id FROM permisos JOIN modulos 
+                               ON  modulos.id =permisos.modulo_id WHERE perfil_id=:perfil";  
+            $params=[":perfil"=>$perfil_id];                            
+            $result=$this->EjecutarConsulta($this->consulta,$params);                              
+            $result->setFetchMode(PDO::FETCH_OBJ);           
+            return $result->fetchAll();        
         }
         catch(Exception $ex)
         {
@@ -52,10 +48,10 @@ class PermisoRepository extends DataAccess
     {
         try
         {
-            $stmt = $this->con->prepare("SELECT * FROM permisos");              
-            $stmt->execute();                              
-            $stmt->setFetchMode(PDO::FETCH_OBJ);           
-            return $stmt;       
+            $this->consulta ="SELECT * FROM permisos";              
+            $result=$this->EjecutarConsulta($this->consulta);                              
+            $result->setFetchMode(PDO::FETCH_OBJ);           
+            return $result->fetchAll();       
         }
         catch(Exception $ex)
         {
@@ -71,12 +67,10 @@ class PermisoRepository extends DataAccess
     {
         try
 		{	
-			$result=$this->con->prepare("INSERT into permisos(valor,perfil_id,modulo_id )values
-                                        (:valor,:perfil,:modulo )");
-			$result->bindParam(":valor",$request->valor);
-			$result->bindParam(":perfil",$request->perfil);
-			$result->bindParam(":modulo",$request->modulo );
-			$result->execute();					
+			$this->consulta="INSERT into permisos(valor,perfil_id,modulo_id )values
+                                        (:valor,:perfil,:modulo )";
+			$params=[":valor"=>$request->valor,":perfil"=>$request->perfil,":modulo"=>$request->modulo ];
+			$this->EjecutarConsulta($this->consulta,$params);					
      	}
 		catch(Exception $ex){
 			die($ex->getMessage());
@@ -90,9 +84,9 @@ class PermisoRepository extends DataAccess
     {
         try
 		{	
-			$result=$this->con->prepare("DELETE FROM permisos where id=:id");
-			$result->bindParam(":id",$id);
-			$result->execute();					
+			$this->consulta="DELETE FROM permisos where id=:id";
+			$params=[":id"=>$id];
+			$this->EjecutarConsulta($this->consulta,$params);					
      	}
 		catch(Exception $ex){
 			die($ex->getMessage());
