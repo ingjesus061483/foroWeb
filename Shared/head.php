@@ -3,11 +3,14 @@ session_start();
 require_once("../../Model/Usuario.php");
 require_once("../../Model/Perfil.php");
 require_once("../../Model/Modulo.php");
+require_once("../../Model/Curso.php");
 require_once('../../Repositories/UsuarioRepository.php');
 require_once('../../Repositories/PerfilRepository.php');
 require_once('../../Repositories/PermisoRepository.php');
 require_once('../../Repositories/ModuloRepository.php');
+require_once('../../Repositories/CursoRepository.php');
 require_once("../../Controllers/ModuloController.php");
+require_once("../../Controllers/CursoController.php");
 require_once("../../Controllers/HomeController.php");
 require_once("../../Controllers/PerfilController.php");
 require_once("../../Controllers/UsuarioController.php");
@@ -52,6 +55,7 @@ $usuario=unserialize($_SESSION["usuario"]);
 				<li><a href="<?=$url?>views/usuarios/">Usuarios</a></li>
 				<li><a href="<?=$url?>views/perfiles/">Perfiles</a></li>
 				<li><a href="<?=$url?>views/modulos/">Modulos</a></li>
+				<li><a href="<?=$url?>views/cursos/">Cursos</a></li>
                 <li>
                     <?php if($usuario!=null){?>
                     <form action="index.php"onsubmit="return validar('Desea salir de esta aplicacion?')" " method="post">     
