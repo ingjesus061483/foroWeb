@@ -12,7 +12,15 @@ class UsuarioController
         $this->usuarioRepository=new UsuarioRepository();
         $this->perfilRepository=new PerfilRepository();
         $this->cursoRepository=new CursoRepository();
-    }	    
+    }	 
+    function DeleteCursosByUsuarios($request)
+    {
+        $msg="";        
+        $this->usuarioRepository->DeleteCursosByUsuarios($request);		        
+        $msg="Registro eliminado con exito ";
+    	return $msg;
+
+    }       
     function GetUser($row) 
     {
         $usuario=null;     

@@ -6,6 +6,19 @@ class UsuarioRepository extends DataAccess
 	{
 		$this->AbrirConexion();	
 	}
+	function DeleteCursosByUsuarios($request)
+	{
+		try
+		{
+			$this->consulta ="DELETE from  usuario_cursos where usuario_id=:usuario_id and curso_id= :curso_id";
+			$params=[":usuario_id"=>$request->usuario_id,":curso_id"=>$request->curso_id];			
+			$this->EjecutarConsulta($this->consulta,$params);									
+		}
+		catch(Exception $ex)
+		{
+			die($ex->getMessage());
+		}
+	}
 	function PostCursosByUsuarios($request)
 	{
 		try

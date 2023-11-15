@@ -3,12 +3,18 @@ $titulo="Detalle de usuario";
 include("../../shared/head.php");
 
 $modulo="useres";
-$usuarioController=new usuarioController();
+$usuarioController=new UsuarioController();
 $id=0;
 $msg="";
 if (isset($_GET["id"]))
 {    
     $id=$_GET['id'];    
+}
+if (isset($_POST["eliminar"]))
+{
+    $request =(object) $_POST;
+    $usuarioController->DeleteCursosByUsuarios($request);
+    header('Location:index.php');	    
 }
 $rows=null;
 $user=$usuarioController->show($id,$rows);
@@ -26,8 +32,7 @@ $cursos=$user->Cursos;
                 <tr>
                     <th >Id </th>
                     <th >Nombre</th>
-                    <th >Descripcion</th>                                         
-                    <th></th>  
+                    <th >Descripcion</th>                                                
                     <th></th>                          
                 </tr>
             </thead>       
@@ -36,11 +41,11 @@ $cursos=$user->Cursos;
             <tr>
                <td ><?=$row->id?> </td>
                <td><?=$row->nombre?></td>            
-               <td><?=$row->descripcion?></td>                                          
-               <td><a class="btn  btn-warning" href="<?=$url?>views/cursos/editar.php?id=<?=$row->id?>">Editar</a></td>    
+               <td><?=$row->descripcion?></td>                                                         
                <td>
-                  <form action="show.php" method="post">
-                     <input type="hidden" name="id" value="<?=$row->id?>">
+                  <form action="show.php" onsubmit="return Confirmar('Desea eliminar este restro?')" method="post">
+                     <input type="hidden" name="usuario_id" value="<?=$user->id?>">
+                     <input type="hidden" name="curso_id" value="<?=$row->id?>">
                      <button type="submit" class="btn btn-danger" name="eliminar" >Eliminar</button>
                   </form>
                </td>

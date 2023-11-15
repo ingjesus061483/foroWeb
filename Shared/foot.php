@@ -82,8 +82,10 @@ function Guardar()
             console.log( "La solicitud se ha completado correctamente.",data.msg );                     
             if(data.err)
             {
-                $("#pnlUsuarioCurso").dialog("close");
+                
                 alertify.success(data.msg);        
+                window.location.href="<?=$url?>views/usuarios/show.php?id=12";
+                
             }
             else
             {
