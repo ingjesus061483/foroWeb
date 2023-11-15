@@ -3,7 +3,8 @@ $titulo="Listado de usuarios";
 require_once("../../shared/head.php");
 $modulo="Usuarios";
 $UsuarioController=new UsuarioController();
-$rows=$UsuarioController->index();
+$cursos;
+$rows=$UsuarioController->index($cursos);
 $msg="";
 if(isset( $_POST["eliminar"]))
 {
@@ -27,6 +28,8 @@ if(isset( $_POST["eliminar"]))
 					<th>Usuario</th>										
 					<th >perfil</th>
 					<th></th>
+					<th></th>
+					<th></th>
 					<th></th>					
 				</tr>				
 			</thead> 				
@@ -41,11 +44,13 @@ if(isset( $_POST["eliminar"]))
 					<td><?=$row->email?></td>					
 					<td><?=$row->usuario?></td>					
 					<td><?=$row->perfil?></td>					
+					<td><button onclick="añadirCurso(<?=$row->id?>)" class="btn btn-info">Añadir curso</button></td>
+					<th><a class="btn  btn-success" href="<?=$url?>views/usuarios/show.php?id=<?=$row->id?>">Ver</a></th>
 					<td><a class="btn  btn-warning" href="<?=$url?>views/usuarios/editar.php?id=<?=$row->id?>">Editar</a></td>					
 					<td>
-					<form action="Index.php" method="post">
-                     <input type="hidden" name="id" value="<?=$row->id?>">
-                     <button type="submit" class="btn btn-danger" name="eliminar" >Eliminar</button>
+					<form action="Index.php" onsubmit="return Confirmar('Eliminar Registro?')" method="post">
+					    <input type="hidden" name="id" value="<?=$row->id?>">
+                     	<button type="submit" class="btn btn-danger" name="eliminar" >Eliminar</button>
                   </form>
 					</td>				
 				</tr>

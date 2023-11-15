@@ -5,12 +5,15 @@ class UsuarioController
 {
     private UsuarioRepository $usuarioRepository; 
     private PerfilRepository $perfilRepository;     
+    private CursoRepository $cursoRepository;
     public function __construct()
     {
+
         $this->usuarioRepository=new UsuarioRepository();
-        $this->perfilRepository=new PerfilRepository();;
-    }	
-    private function GetUser($row) 
+        $this->perfilRepository=new PerfilRepository();
+        $this->cursoRepository=new CursoRepository();
+    }	    
+    function GetUser($row) 
     {
         $usuario=null;     
         while ($fila=$row->fetch())
@@ -38,18 +41,23 @@ class UsuarioController
                 $perfil->descripcion=$fila->descripcion;
             }
             $usuario->Perfil=$perfil;            
+            $usuario->Cursos= $this->usuarioRepository->GetCursosByUsuarios($usuario->id);
         }        
+
         return $usuario;        
     }
-	public function index()
+	public function index(&$cursos)
 	{     
+        $cursos=$this->cursoRepository->GetAll();
         $result=$this->usuarioRepository->GetAll();        
         return $result;			
 	}
-    public function Show($id)
+    public function Show($id,&$curso)
     {
         $row=$this->usuarioRepository->find($id);  
-        $usuario=$this-> GetUser($row);        
+        $usuario=$this-> GetUser($row); 
+        $curso=$this->cursoRepository->GetAll();
+
         return $usuario;        
     }
     public function Edit($id, &$combo)

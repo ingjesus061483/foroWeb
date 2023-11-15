@@ -58,7 +58,7 @@ $usuario=unserialize($_SESSION["usuario"]);
 				<li><a href="<?=$url?>views/cursos/">Cursos</a></li>
                 <li>
                     <?php if($usuario!=null){?>
-                    <form action="index.php"onsubmit="return validar('Desea salir de esta aplicacion?')" " method="post">     
+                    <form action="index.php"onsubmit="return Confirmar('Desea salir de esta aplicacion?')" " method="post">     
 						<br>                
                         <input type="submit" name="cerrar" type="submit" value="Cerrar sesion"/>
                     </form>            	

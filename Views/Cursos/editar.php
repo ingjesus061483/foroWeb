@@ -15,7 +15,6 @@ if(isset($_GET["id"]))
 {
     $id=$_GET["id"];      
 }
-
 $curso= $cursoController->editar($id);
 ?>
 <div style='margin:0 auto;' class='card mb-4'>
@@ -50,7 +49,7 @@ function validacion()
         alertify.error("Campo invalido");        
         return false;    
     }    
-    frm.submit();
+    return true;
 }
 </script>
 <?php include("../../shared/foot.php");?>

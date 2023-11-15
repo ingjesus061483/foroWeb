@@ -91,7 +91,7 @@ $permisos=$perfil->Permisos;
             $.ajax({                
                 data:                 
                 {
-                    metodo:"agregarPermiso",
+                    opcion:1,
                     perfil:idperfil.value,
                     modulo : modulo .value,
                     valor : value.value
@@ -106,13 +106,14 @@ $permisos=$perfil->Permisos;
                     {                        
                         alertify.success(data.mesage);        
                         setTimeout(function() {window.location.href="Index.php";}, 5000);
-                }
-                else 
-                {
-                    alertify.error(data.mesage);        
-                }                
-                console .log ("estado :",textStatus);
-                console.log( "La solicitud se ha completado correctamente.",data );             
+                    
+                    }
+                    else 
+                    {
+                        alertify.error(data.mesage);        
+                    }                
+                    console .log ("estado :",textStatus);
+                    console.log( "La solicitud se ha completado correctamente.",data );             
                                
             }).fail(function( jqXHR, textStatus, errorThrown ) {
                 console.log( "La solicitud a fallado: " ,  textStatus);                     

@@ -12,7 +12,6 @@ if (isset($_POST["enviar"]))
     $PerfilesController->CrearPost($request,$msg);    
     header('Location:index.php');
 }    
-
 ?>    
 <div style='margin:0 auto;' class='card mb-4'>
     <div class='card-body'>      
@@ -43,7 +42,7 @@ function validacion()
         alertify.error("Campo invalido");
 		return false;
     }    
-    frm.submit();
+    return true;
 }
 </script>
 <?php  include("../../shared/foot.php")?>

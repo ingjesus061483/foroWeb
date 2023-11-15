@@ -60,7 +60,7 @@ if (!isset($_SESSION['usuario']))
             alertify.error("Campo invalido");
             return false ;
         }
-        frm.submit();    
+        return true;    
     }  
 </script>   
 <?php

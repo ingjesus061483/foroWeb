@@ -1,13 +1,13 @@
 <?php
 require_once("../../Repositories/PermisoRepository.php");
 $request=(object)$_POST;
-$metodo=$request->metodo;
+$opcion=$request->opcion;
 $permisorepository=new PermisoRepository();
 $msg="";
 $success =false;
-switch($metodo)
+switch($opcion)
 {
-    case "agregarPermiso":
+    case 1:
     {      
         if(!$permisorepository->buscarpermiso($idperfil,$modulo,$value))
         {
@@ -21,7 +21,7 @@ switch($metodo)
         }     
         break;
     }
-    case "EliminarPermiso":
+    case 2:
     {
         $id=$request->id;
         $permisorepository->delete($id);

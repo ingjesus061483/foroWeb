@@ -5,6 +5,7 @@ require_once("Model/Usuario.php");
 require_once("Model/Perfil.php");
 require_once('Repositories/UsuarioRepository.php');
 require_once('Repositories/PerfilRepository.php');
+require_once('Repositories/CursoRepository.php');
 require_once("Controllers/UsuarioController.php");
 $usuariocontroller=new UsuarioController();
 $msg="";
@@ -88,9 +89,9 @@ if (isset($_SESSION["usuario"]))
             if(pwd.value=="")
             {
                 alertify.error("Campo invalido");
-                return false ;
+                return false;
             }
-            frm.submit();
+            return true;        
         }  
         </script>   
     </body>

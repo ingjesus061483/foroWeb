@@ -77,45 +77,45 @@ $usuario= $UsuarioController->Edit($id, $rows);
     }
     function validacion()
     {
-                frm=document.getElementById('frm');
-                identificacion=document.getElementById('identificacion');
-                prinombre=document.getElementById('nombre');               
-                priapellido=document.getElementById('apellido');                
-                direccion=document.getElementById('Direccion');
-                telefono=document.getElementById('telefono');
-                perfil=document.getElementById('perfil');
-                if(identificacion.value=="")
-                {
-                    alertify.error("Campo invalido");
-                    return false;
-                
-                }
-                if(prinombre.value=="")
-                {
-                    alertify.error("Campo invalido");
-                    return false;
-                }
-                if(priapellido.value=="")
-                {
-                    alertify.error("Campo invalido");
-                    return false;
-                }
-                if(direccion.value=="")
-                {
-                    alertify.error("Campo invalido");
-                    return false;
-                }
-                if(telefono.value=="")
-                {
-                    alertify.error("Campo invalido");
-                    return false;
-                }
-                if(perfil.value=="")
-                {
-                    alertify.error("Campo invalido");
-                    return false;
-                }
-                frm.submit();
+        
+        frm=document.getElementById('frm');
+        identificacion=document.getElementById('identificacion');
+        prinombre=document.getElementById('nombre');               
+        priapellido=document.getElementById('apellido');                
+        direccion=document.getElementById('Direccion');
+        telefono=document.getElementById('telefono');
+        perfil=document.getElementById('perfil');
+        if(identificacion.value=="")
+        {            
+            alertify.error("Campo invalido");            
+            return false;        
+        }        
+        if(prinombre.value=="")        
+        {            
+            alertify.error("Campo invalido");            
+            return false;
+        }        
+        if(priapellido.value=="")        
+        {            
+            alertify.error("Campo invalido");            
+            return false;        
+        }        
+        if(direccion.value=="")        
+        {            
+            alertify.error("Campo invalido");            
+            return false;        
+        }        
+        if(telefono.value=="")         
+        {            
+            alertify.error("Campo invalido");            
+            return false;        
+        }        
+        if(perfil.value=="")        
+        {            
+            alertify.error("Campo invalido");            
+            return false;        
+        }        
+        return true;	
     }
  </script>
 <?php

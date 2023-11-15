@@ -13,11 +13,13 @@ class PermisoRepository extends DataAccess
                              AND modulo_id=:modulo AND valor =:valor";
             $params=[':perfil'=>$perfil_id,':modulo'=>$modulo_id,':valor'=>$value];
             $result=$this->EjecutarConsulta($this->consulta,$params);                              
-            $result->setFetchMode(PDO::FETCH_OBJ);           
-            if($row=$result->fetch()){
-                $encontrado=true;
-            }
-            return $encontrado;
+            $result->setFetchMode(PDO::FETCH_OBJ);
+            $arr= $result->fetchAll();		
+			if (count($arr)>0)
+			{
+				$encontrado=true;
+			}
+			return $encontrado;		 
         }
         catch(Exception $ex)
         {

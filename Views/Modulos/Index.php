@@ -35,7 +35,7 @@ if(isset( $_POST["eliminar"]))
                <td><?=$row->descripcion?></td>                                          
                <td><a class="btn  btn-warning" href="<?=$url?>views/modulos/editar.php?id=<?=$row->id?>">Editar</a></td>    
                <td>
-                  <form action="Index.php" method="post">
+                  <form action="Index.php" onsubmit="return Confirmar('Eliminar Registro?')" method="post">
                      <input type="hidden" name="id" value="<?=$row->id?>">
                      <button type="submit" class="btn btn-danger" name="eliminar" >Eliminar</button>
                   </form>

@@ -1,22 +1,26 @@
 <?php
-$titulo="Listado de  cursos";
+$titulo="Detalle de usuario";
 include("../../shared/head.php");
 
-$curso="cursos";
-$cursosController=new cursoController();
-$rows=$cursosController->index();
-if(isset( $_POST["eliminar"]))
-{
-   $cursosController->delete($_POST["id"],$msg); 
+$modulo="useres";
+$usuarioController=new usuarioController();
+$id=0;
+$msg="";
+if (isset($_GET["id"]))
+{    
+    $id=$_GET['id'];    
 }
-
+$rows=null;
+$user=$usuarioController->show($id,$rows);
+$cursos=$user->Cursos;
 ?>
-
-<div style='margin:0 auto;' class='card mb-4'>
-    <div class='card-header'>
-        <a  class='btn btn-primary' href='Crear.php'>Crear</a>
-    </div>
-    <div class='card-body'>   
+<div class='card'>    
+    <div class='body'>
+        <p><strong>indentificacion:</strong><?= $user->identificacion?> </p>        
+        <p><strong>Nombre completo:</strong><?=$user->nombre.' '.$user->apellido ?></p>        
+        <p><strong>Direccion:</strong> <?=$user->direccion?></p>        
+        <p><strong>Telefono:</strong><?= $user->telefono?></p>        
+        <p><strong>user:</strong><?= $user->usuario?></p>             
         <table class="table" id='customers'>
             <thead>
                 <tr>
@@ -28,14 +32,14 @@ if(isset( $_POST["eliminar"]))
                 </tr>
             </thead>       
             <tbody>
-            <?php foreach($rows as $row){ ?>
+            <?php foreach($cursos as $row){ ?>
             <tr>
                <td ><?=$row->id?> </td>
                <td><?=$row->nombre?></td>            
                <td><?=$row->descripcion?></td>                                          
                <td><a class="btn  btn-warning" href="<?=$url?>views/cursos/editar.php?id=<?=$row->id?>">Editar</a></td>    
                <td>
-                  <form action="Index.php" onsubmit="return Confirmar('Eliminar Registro?')" method="post">
+                  <form action="show.php" method="post">
                      <input type="hidden" name="id" value="<?=$row->id?>">
                      <button type="submit" class="btn btn-danger" name="eliminar" >Eliminar</button>
                   </form>
@@ -46,4 +50,4 @@ if(isset( $_POST["eliminar"]))
         </table>
     </div>
 </div>
-<?php include("../../shared/foot.php");?>
+<?php require_once("../../shared/foot.php");?>

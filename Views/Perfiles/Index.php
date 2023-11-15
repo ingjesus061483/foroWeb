@@ -9,7 +9,6 @@ if(isset( $_POST["eliminar"]))
    $PerfilesController->delete($_POST["id"],$msg); 
 }
 $rows=$PerfilesController->index();
-
 ?>
 <div style='margin:0 auto;' class='card'>
    <div class='header'>  
@@ -36,7 +35,7 @@ $rows=$PerfilesController->index();
             <td><a class="btn btn-success" href="<?=$url?>views/perfiles/Detalles.php?id=<?=$row->id?>">Ver</a></td>    
             <td><a class="btn  btn-warning" href="<?=$url?>views/perfiles/editar.php?id=<?=$row->id?>">Editar</a></td>    
             <td>
-               <form action="Index.php" method="post">
+               <form action="Index.php" onsubmit="return Confirmar('Eliminar Registro?')" method="post">
                   <input type="hidden" name="id" value="<?=$row->id?>">
                   <button type="submit" class="btn btn-danger" name="eliminar" >Eliminar</button>
                </form>

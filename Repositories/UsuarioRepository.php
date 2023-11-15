@@ -6,6 +6,58 @@ class UsuarioRepository extends DataAccess
 	{
 		$this->AbrirConexion();	
 	}
+	function PostCursosByUsuarios($request)
+	{
+		try
+		{
+			$this->consulta="INSERT into usuario_cursos(usuario_id,curso_id) values (:usuario_id,:curso_id)   ";
+			$params=[":usuario_id"=>$request->usuario_id,":curso_id"=>$request->curso_id];			
+			$this->EjecutarConsulta($this->consulta,$params);									
+		}
+		catch(Exception $ex)
+		{
+			die($ex->getMessage());
+		}
+
+	}
+	function BuscarCursosByUsuarios($usuario_id,$curso_id)
+	{
+		try
+		{
+			$encontrado=false;
+			$this->consulta="SELECT cursos.* FROM cursos JOIN usuario_cursos ON cursos.id=usuario_cursos.curso_id 
+							 WHERE  usuario_cursos.usuario_id=:usuario_id and curso_id=:curso_id ";
+			$params=[":usuario_id"=>$usuario_id,":curso_id"=>$curso_id];
+			$result=$this->EjecutarConsulta($this->consulta,$params);							
+			$result->setFetchMode(PDO::FETCH_OBJ);
+			$arr= $result->fetchAll();		
+			if (count($arr)>0)
+			{
+				$encontrado=true;
+			}
+			return $encontrado;		
+		}
+		catch(Exception $ex)
+		{
+			die($ex->getMessage());
+		}
+	}
+	function GetCursosByUsuarios($id)
+	{
+		try
+		{
+			$this->consulta="SELECT cursos.* FROM cursos JOIN usuario_cursos ON cursos.id=usuario_cursos.curso_id 
+							 WHERE  usuario_cursos.usuario_id=:id";
+			$params=[":id"=>$id];
+			$result=$this->EjecutarConsulta($this->consulta,$params);							
+			$result->setFetchMode(PDO::FETCH_OBJ);
+			return $result->fetchAll();		
+		}
+		catch(Exception $ex)
+		{
+			die($ex->getMessage());
+		}
+	}
 	function GetAll()
 	{
 		try
