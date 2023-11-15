@@ -31,7 +31,6 @@ class UsuarioRepository extends DataAccess
 		{
 			die($ex->getMessage());
 		}
-
 	}
 	function BuscarCursosByUsuarios($usuario_id,$curso_id)
 	{
@@ -176,8 +175,7 @@ class UsuarioRepository extends DataAccess
 		catch(Exception $ex)
 		{
 			die($ex->getMessage());
-		}		
-	
+		}			
 	}
 	public function Login($request)
 	{		

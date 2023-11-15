@@ -81,11 +81,9 @@ function Guardar()
             console .log ("estado :",textStatus);            
             console.log( "La solicitud se ha completado correctamente.",data.msg );                     
             if(data.err)
-            {
-                
+            {                
                 alertify.success(data.msg);        
-                window.location.href="<?=$url?>views/usuarios/show.php?id=12";
-                
+                window.location.href="<?=$url?>views/usuarios/show.php?id=12";                
             }
             else
             {
@@ -96,8 +94,6 @@ function Guardar()
             {
                 console.log( "La solicitud a fallado: " ,  textStatus);                     
     });             
-
-
 } 
 function añadirCurso(id)
 {

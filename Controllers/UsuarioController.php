@@ -8,7 +8,6 @@ class UsuarioController
     private CursoRepository $cursoRepository;
     public function __construct()
     {
-
         $this->usuarioRepository=new UsuarioRepository();
         $this->perfilRepository=new PerfilRepository();
         $this->cursoRepository=new CursoRepository();
